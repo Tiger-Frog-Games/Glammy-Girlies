@@ -7,6 +7,8 @@ namespace TigerFrogGames
         readonly SoundManager soundManager;
         Vector3 position = Vector3.zero;
         bool randomPitch;
+        bool pitch;
+        float pitchVariation;
 
         public SoundBuilder(SoundManager soundManager) {
             this.soundManager = soundManager;
@@ -19,6 +21,13 @@ namespace TigerFrogGames
 
         public SoundBuilder WithRandomPitch() {
             this.randomPitch = true;
+            return this;
+        }
+
+        public SoundBuilder WithPitch(float pitchVariation)
+        {
+            this.pitch = true;
+            this.pitchVariation = pitchVariation;
             return this;
         }
 
@@ -38,7 +47,12 @@ namespace TigerFrogGames
             if (randomPitch) {
                 soundEmitter.WithRandomPitch();
             }
-        
+
+            if (pitch)
+            {
+                soundEmitter.WithPitch(pitchVariation);
+            }
+            
             if (soundData.frequentSound) {
                 soundManager.FrequentSoundEmitters.Enqueue(soundEmitter);
             }

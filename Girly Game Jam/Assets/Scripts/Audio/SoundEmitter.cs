@@ -70,5 +70,10 @@ namespace TigerFrogGames
         public void WithRandomPitch(float min = -0.05f, float max = 0.05f) {
             audioSource.pitch += Random.Range(min, max);
         }
+
+        public void WithPitch(float pitchVariation)
+        {
+            audioSource.pitch += pitchVariation;
+        }
     }
 }

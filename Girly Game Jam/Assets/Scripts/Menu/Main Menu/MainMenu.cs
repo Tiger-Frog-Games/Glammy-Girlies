@@ -18,6 +18,7 @@ namespace TigerFrogGames
         
         [SerializeField] private SettingsMenu settingsMenu;
         
+        [SerializeField] private SoundDataName soundToPlay;
         /* ------- Unity Methods ------- */
 
         private void Awake()
@@ -27,6 +28,34 @@ namespace TigerFrogGames
             exitButton.onClick.AddListener(StartGameExitClicked);
 
             settingsMenu.OnSettingsClosed += ShowMainButtonsFromSettings;
+            
+            startGameButton.onHover.AddListener(PlayMenuSound);
+            settingsButton.onHover.AddListener(PlayMenuSound);
+            exitButton.onHover.AddListener(PlayMenuSound);
+
+            soundDataToPlay = SoundSFXLibrary.Instance.GetSoundByEnum(soundToPlay);
+        }
+
+        private SoundData soundDataToPlay;
+        private float lastPlayedTimeInSeconds;
+        private float currentPitchUp = -.05f;
+        
+        private void PlayMenuSound()
+        {
+            if (Time.time - lastPlayedTimeInSeconds > 0.2f)
+            {
+                currentPitchUp = -.05f;
+            }
+            else
+            {
+                currentPitchUp = Mathf.Min(.05f, currentPitchUp + .01f); 
+            }
+            
+            SoundManager.Instance.CreateSoundBuilder()
+                .WithPitch(currentPitchUp)
+                .Play(soundDataToPlay);
+            
+            lastPlayedTimeInSeconds = Time.time;
         }
 
         private void Start()
