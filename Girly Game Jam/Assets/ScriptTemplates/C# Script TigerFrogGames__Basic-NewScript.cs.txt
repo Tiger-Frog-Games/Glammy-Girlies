@@ -1,0 +1,9 @@
+using UnityEngine;
+
+namespace TigerFrogGames
+{
+    public class #SCRIPTNAME# 
+    {
+        
+    }
+}

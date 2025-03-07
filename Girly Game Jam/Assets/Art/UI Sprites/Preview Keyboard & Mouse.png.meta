@@ -1,0 +1,5772 @@
+fileFormatVersion: 2
+guid: dee5bcf242f7b9842af689dcf16531f1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Keyboard & Mouse_F1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46726d525cd4ee648a6f038cc7030b46
+      internalID: -1495590451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade963a775de55e4a9946cf23c0c3364
+      internalID: 2037842332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16b34f7f5e78f44d9753647fc47dc18
+      internalID: 879919851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0640c9ace2d043e429d370f2262eba91
+      internalID: 806312182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_4
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c04a307e61c064428c2568ad4cb81d1
+      internalID: -1949885001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_5
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a50373bbec810a429b212fc6e1ff69c
+      internalID: 1687559121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_6
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb3faa5bf88c904d8b6f3701afaf3ae
+      internalID: 194211305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_7
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca47e7ea1a903c48a0d4bb609e7377c
+      internalID: 137485568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_8
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6357388b07031b349b910abaaedb3bc5
+      internalID: 960892649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_9
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e357c854286e0f14f881a99b479ebe4c
+      internalID: 313006571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_10
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05d171347bc31d418e904135bfcc139
+      internalID: 604708087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_11
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec848e4e5734751489b05b1efd8f86b7
+      internalID: 443408492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_12
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf83b31a416fb524baeb743e9450f264
+      internalID: -673133058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_13
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ef032474f2ea7428df91ec380f5e84
+      internalID: -2038374106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_14
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ec00b4bbd5c77498c50410b345a74e
+      internalID: 1658186688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_15
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f25cb59b0dc3644adc077e992a4a58
+      internalID: -1607778982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_16
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6765fa7f82747a041a3e1c4a83abc869
+      internalID: 365824971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_17
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e871c952b88aa0c4c95545cc4e42549f
+      internalID: -1191435355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_18
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890943cd731ab0347946ab3a7ed6972e
+      internalID: -354796381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_19
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c689b4f2e404c4599ca4769998e570
+      internalID: -781807086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_20
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c82d2caff5ac67488d27f41c4ebac8c
+      internalID: 953022862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_21
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66be66c13c4563d42a9467d51cb89892
+      internalID: -1089384338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_22
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726789a6d5568ac4db1146619fd4534c
+      internalID: -1132388018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_23
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b578cbbdd25af0f4895cb247e2083152
+      internalID: 1554510532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_24
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a70c9f83feaa4049bd57ef96bf7ae9c
+      internalID: -1472150271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_25
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a79679b2fa92e42b2d4e0fe19f8bc7
+      internalID: -231177028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_27
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66149f4870341df49bbc3683ebf89b74
+      internalID: -1522077822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_28
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f61604dc809014cbb865e5984ffbb1
+      internalID: 1164972740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_29
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52061c63acc8d44ca3bfdda571f6cd7
+      internalID: -232138989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_30
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279bca70df53f564daa29953961fbaaa
+      internalID: -529643833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_31
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b890b34eaafae4ab10afddbdecf0dc
+      internalID: -769416695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_32
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d1678a61f7feb49a1e4b8e490ad8d5
+      internalID: -1831842033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_33
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c010646d1930a4fb4e021b2280eb8a
+      internalID: 1735984340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_34
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47bb7d6900c3e842996117db84387c7
+      internalID: 1736077787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_35
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90285292c39dbb4d898193cbc1c1942
+      internalID: 752803438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_36
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297fb00cdbe4e9848ba6dcaa3a49e88c
+      internalID: 451230100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_37
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0ea16c4e6946845be0e50b3bca67ab
+      internalID: -1749165996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_38
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b7875881986674dae4f8abac3d52b6
+      internalID: -1443964342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_39
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e8ab81f2340fa4da67021343f937ab
+      internalID: 2041858802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_40
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01bbb20df5b1804488ed0ce027a4e94
+      internalID: 1949852246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_41
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efaff89c3f786748b0367e853bd0a1d
+      internalID: -2031149921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_42
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98222414925934448eebbdb6e867233
+      internalID: -710948624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_43
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee599115bf2f6224a97b48b5c1d09c31
+      internalID: 1774168171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_44
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328079f0ca377914d84b69bfe2acca6a
+      internalID: -1726422700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_45
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08cb68c62e0f07146b55de2f82cf8e6a
+      internalID: -519186956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_46
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283a67deb14f3724ebf6c11d8b4a83c3
+      internalID: 1066469423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_47
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc3f2c67200af34299f01be8836df5f
+      internalID: 1542335985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_48
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a24ab77912dc7b4fbf8a7b5d13b936b
+      internalID: 1618513423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_49
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6978f8ba1b6500546b3a5f59ed0b8abe
+      internalID: 1763247375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_50
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5f1ab0294cddb4396848a1605b43c3
+      internalID: 1559164967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_51
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baef26db5b973eb4c93ddc548dde386b
+      internalID: -1779751378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_52
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 354
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00788860c54f54744a7c165083209d61
+      internalID: 102549584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Q
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec49d2e22fcceb545919ab903d6c9fbf
+      internalID: 604110846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f1c86df9f73074184e05bb58ca6b86
+      internalID: 1343843229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c450fe95a75cab4a92ac7760c43c21a
+      internalID: 1515120855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_R
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1924526dbb91ed94897647840320c5f6
+      internalID: 1026995726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_T
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78b9886946509046a24513a3e84ced1
+      internalID: -1932517337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_Y
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146954612960e0240b85aa7ff2f53e4e
+      internalID: 42249256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_U
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13210181490fe484ca5c32b7b07af36e
+      internalID: 416796334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_I
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd15cf0f4cda42349b1ad780ab5d76c8
+      internalID: -294495353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_O
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44892b46f086fa84883fd4bc438594fe
+      internalID: -415888001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6068eacdbb901764bbc1c17d59cf2d08
+      internalID: 1328994135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_-
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1631500d15a77244798f1086e61cf219
+      internalID: -1667694287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_+
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b7bac3b27bd87429ad0c06af57de6a
+      internalID: -1494394285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_66
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2c43a0b2530b046b2dbfe00de3e7d7
+      internalID: -63505189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_67
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558a15d1b26d34e4aa810621f8fc61be
+      internalID: -1114753353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_68
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9928a5929da518745a53da860596835a
+      internalID: -1725403803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_69
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc56ac0efa2a9634aa722f4c23e1a443
+      internalID: -522393872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_70
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ade42f387c8234aba222cdd941a565
+      internalID: 807801275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_71
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28fb1f5e2ff1e54694c09e590aa6a6d
+      internalID: 2024268538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_72
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877369192f1b37942b516b25dd045267
+      internalID: -933979187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_73
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6498678ee9b0f2347aab578cd2c4dfd0
+      internalID: 1583133862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_74
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7989e0f296b9ee14b96074ffd5b5cb39
+      internalID: 589975312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_75
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294a66e4052bdab4890bfe1625be9997
+      internalID: 29775408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_76
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baddfa2858243dc409824af2178992b8
+      internalID: 919480571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_77
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59fcc31cddf532149bac8f556226562a
+      internalID: -582108153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_78
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ba35dea90c2c04991d4fcbe8c0f1ae
+      internalID: -1627174550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_79
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 322
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfcaca2815d17544b91a852443b0c1c
+      internalID: -2075499368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_81
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04803708cc774c4ba4aae1b75a852bc
+      internalID: 1461915523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_82
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821d6dd9d55dad04a810b4abf3c7fa99
+      internalID: -897607392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_83
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65db949a82fb1524fbead1b1d94ef323
+      internalID: 989145424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_84
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576c22378d2eeeb49bc545bb36d60824
+      internalID: -252690209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_85
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5937144620bb8f646a95d5f5e268046f
+      internalID: 1514903859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_86
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e40cfb255437e844ab690dd90ffff4d
+      internalID: 582877020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_87
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97e9056ca00f9347bda78089b72b03a
+      internalID: -686419292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_88
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424cb357dd7ec274f98638ee20419e16
+      internalID: -1702156960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_89
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90235d550b8090242b517ad66646183b
+      internalID: -105193231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_90
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9642cdcfcb8f35045b8a9277efeabc92
+      internalID: 330295838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_91
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ac3ba053875674bbf1daa2188a1747
+      internalID: -616137150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_92
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3315e20850379ce48b3fdf360cc221ca
+      internalID: -564947734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_93
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b755655cfa8e93245aaaf2398b2da01f
+      internalID: -887912247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_94
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc303816927cdab40884aa45816bad1d
+      internalID: 320173221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_95
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd57dc782af13d43b17418a00acb7cb
+      internalID: 2108911081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_96
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc261aca8f3514d41a22b78a641d673d
+      internalID: -1397013065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_97
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159a4a8b7eaf6c7479bf35aa17a5f2c8
+      internalID: 745324432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_98
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2a44f4bc9067f4fb048ff99eef007e
+      internalID: -1594695729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_99
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4eb74d22ef158428d177ea257b3f6a
+      internalID: 1700800092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_100
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a8c517210e15a40b1f75245ada4fdc
+      internalID: 850538683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_101
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d8560d76d57a04b9dd6e7e20722994
+      internalID: -17314361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_102
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1fda0ea0255404d8e56e9f608c2c4c
+      internalID: -1102277454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_103
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9183ca1d7727f3347aed3bb8c764cc79
+      internalID: 1468949557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_104
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce757797e1233a4d95685c506b845c2
+      internalID: -828818773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_105
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f20e4f6988ba854db9239d27b105c33
+      internalID: -751422043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_106
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 290
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76cb5e8e77975c74cb71db35a862cab3
+      internalID: 2103820010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_A
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c55c6874f2cca04a8f88b2e530bc3fd
+      internalID: -2005295584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_S
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e85540fa1886744a58e6f25266a7af
+      internalID: -2052096418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_D
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8256c96d503d44dbb18444ea239013
+      internalID: -850551972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_F
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976af77577b8df444823610a4a215cde
+      internalID: 595895026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_G
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8c545833c73124fb18621bccb0ca11
+      internalID: 422867175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_H
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e23b0dbf988a54ab2f104d084127af
+      internalID: 218412689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_J
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d440f303601863469fc0ec38fee1b57
+      internalID: 259508628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_K
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5435ce465a5bfc840a2f1e85c43e3b91
+      internalID: -806684120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_L
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ea4a9bf552c6d4d9436e2aa92f7c1a
+      internalID: 189266147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_117
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a84cccea08234144968a9cf346db6ee
+      internalID: 291390106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_118
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582d463339ad9504d91dd5efc75b25c0
+      internalID: 1218879031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_119
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8840bdb87b7ff4baf8813d5aa2868f
+      internalID: -435107131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_120
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5746408169b1d440909ee194a26cfda
+      internalID: 1725050815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_121
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bd05af3a44e894e91b4c59c4843839
+      internalID: -673575171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_122
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5afe2f386a53d664fb6acfa30d486d86
+      internalID: 1927689604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_123
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ca0e3aef023734aa2a3b1cf5e200ce
+      internalID: -881058046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_124
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63628672e84e383468a0454bc4837e09
+      internalID: 1923060274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_125
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c8ac8ee5fb22243a2e83aefef3abbd
+      internalID: 411533138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_126
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b34ae0ca2804264baa51ab5e977dbec
+      internalID: 748930683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_127
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0905f7e29eff47f47aebe99dba90f3ed
+      internalID: 479559665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_128
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295a01df785eec546bfaa7060bd6f415
+      internalID: -1300183549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_129
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36e3037dfaa1344a8a2c08b404cdae5
+      internalID: -1999636478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_130
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbc2e89679359245af544dfce61cb13
+      internalID: -952514255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_131
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e2cf765b9c61741af7148c4b8eec49
+      internalID: -489166349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_132
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8fd330b88bbed04b9a3138ef4965863
+      internalID: -2014710513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_133
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 258
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de4b5589f1875942a1b3d0fe4b8fa3a
+      internalID: 1063965798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_135
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4622de238d3189240a90e36e30305bb7
+      internalID: -1301942577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_136
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c4a499c9d4fd543a5859626934893f
+      internalID: -902612758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_137
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3023ac8e5c0f9ed4f802e4ee7938f5ff
+      internalID: 1389751782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_138
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16693e9ea0fdac345bdd8fa8f0704232
+      internalID: -1738126407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_139
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603f2ac0a1caaca43ad87c6cf2492bba
+      internalID: 131008788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_140
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3783a032f35dba942ae18a4265e0e7d1
+      internalID: -1071430988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_141
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993ef746435d5f34ea19b33073aa2e6f
+      internalID: 111732416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_142
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb027bfc69651004c83aa341f8be51c2
+      internalID: -160382519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_143
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6199a1790a5037e4891cb15619623e81
+      internalID: -334468169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_144
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6454e60487ce540ad52ec6b1b82ade
+      internalID: 1043009549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_145
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba0cc6e15fb5984a94eb24278d51ada
+      internalID: -692535007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_146
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af70272bf45c174592ef912244d8070
+      internalID: -1161587270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_147
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a07b746d201da498f5d65396fe1a79
+      internalID: -847590323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_148
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2072adb4e6ebf3347a6c2292e1d495fb
+      internalID: -1404873223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_149
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667602c31ef1bfd4081196c3b50ff2b2
+      internalID: 557179260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_150
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92caf18099d6fb54da7759df12c23c1b
+      internalID: -599995684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_151
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592bc5b8586e46942a140b6d7245170b
+      internalID: 1511850953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_152
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb0bd4d32e83c040b468da910535c41
+      internalID: 1242217169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_153
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb411e60a3032304da8ca26be3cfae86
+      internalID: -994111501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_154
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a9fc7fbffebf3438fff54c36f3bd3c
+      internalID: -1717035298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_155
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcd03bd485ecef4ba23cc29d621fdbb
+      internalID: 679706409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_156
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4092f7ed9e5df084c8e141799a0423b6
+      internalID: 1130904728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_157
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5726520353e3384d978d0277ffabe17
+      internalID: -768780924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_158
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339d33fd3b7818745a6074b6403fe477
+      internalID: -82706503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_159
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1645b9a124d7694b805eb7cf29394b1
+      internalID: -215672829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_160
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 226
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dd8d8c99155e041aaef762fbb428e1
+      internalID: 66454264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_Z
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394e07291a607164d8e5a833ef59dda6
+      internalID: -1502042423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_X
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983c490ca0b856a4fa139c9b04274b2e
+      internalID: 436780524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_C
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b7f028eb25fa349b21477db9f177e2
+      internalID: -1387724136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_V
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1d2d01bba6cbc4f84871868ec75260
+      internalID: 1728520437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_B
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8026e4209253c14fa55b073aad5163a
+      internalID: 2078816232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_N
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98560e721be15d5408e543e286077a3e
+      internalID: 744850316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard & Mouse_M
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2199248823a0a43afc1b9128cd07bf
+      internalID: 841380075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_169
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff701b5af0253d439096f1b55fbf523
+      internalID: 581959879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_170
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03e162e2b1647242ac067f50ec5e4ba
+      internalID: 1972989316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_171
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c508e82ce7cccd24c9dfe7d34ac988ea
+      internalID: -1254665958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_172
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce22fd3de3214c344a73f10ddfe99ff8
+      internalID: -2129282149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_173
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecaa2c1f3d97204f83b33c3cbd2535b
+      internalID: -1817085580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_174
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd793c2f26e915f4fba0f97a6319a65b
+      internalID: -1604959229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_175
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d1ea3e13deebd44b575a7d3faaf354
+      internalID: -1697070206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_176
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75fe3882da02b449bd6f7e2e0a8dba7
+      internalID: -190603125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_177
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b88a2f70a97e840bf52f479949972f
+      internalID: -2094456703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_178
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851f8ed7202d49e4993d5924e4b3c45d
+      internalID: 7189345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_179
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a803ac25599b44ea8f5bc87a76132f
+      internalID: 79967638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_180
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b662c6624001f2a42b4dcc34473ecf17
+      internalID: 1307284173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_181
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9407d7d87abf5041bf8d1d660f43638
+      internalID: 723530093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_182
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3133d0a32173b7b4fb16994b8ed270a1
+      internalID: -849164946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_183
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a040cfabf2ccc43b565f427907d5a3
+      internalID: 1369595564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_184
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18208d439d20cc54ab1efe06ca83a932
+      internalID: 511951050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_185
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea916126e281347429e3b67bb519ac50
+      internalID: 1648839385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_186
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5bb61acae9d1d44bd8641f42016a49
+      internalID: 374147672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_187
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 194
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba347a1946232449bae7a33d81ae346
+      internalID: 703732743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_189
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b7bc8c56f0ee34ebf62108b8dc7a6a
+      internalID: -372795858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_190
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759a183389dc31846bb5701b03387e52
+      internalID: 140847325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_191
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0ed6656a04809448a82717c16a33e4
+      internalID: -403619671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_192
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca07f358b1d96044998599c743bf2e8
+      internalID: 1014367657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_193
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28dcc1df71bedc48b004ee82824ca70
+      internalID: -1921604977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_194
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5577e03b8c6d18042a337fa6c8581e0a
+      internalID: 525462839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_195
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d64cb812586ed489dc4f9ff2a396f9
+      internalID: 1040427719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_196
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402e8bfa432368246b82ae33628be6fd
+      internalID: 1755671576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_197
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17cdaa58c1a3564da34692b4fa58a3c
+      internalID: -751922818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_198
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefde08042bfc44428f25324f6673b0a
+      internalID: 250199786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_199
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef7d5447f4021f84dafeaa1667e22c5c
+      internalID: 1425625134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_200
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18c5fee5edfe844f8a444fee72d25af
+      internalID: -532336180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_201
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e2f2cea858def4595aa23b5eba4b8a
+      internalID: -1752247220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_202
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60980401419cbfb4d9e5b4108b4ccb2c
+      internalID: -137577477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_203
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519c0dd0b697f6b45bbb882e3093277c
+      internalID: -515209256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_204
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a629d914d4663f43a37f3458246ebeb
+      internalID: -1342535271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_205
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb75e93904ba63743a4ea30f33c1e49f
+      internalID: 1093494371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_206
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39143c917408a8b4bbadcaf543cff439
+      internalID: -2018313605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_207
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f1b4239dbad684692980a2f3a2cbca
+      internalID: 477748446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_208
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99eeff44d1ab7148b10c4829bbb6174
+      internalID: 1618079236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_209
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d919cd8a4505984dbac95e7da022830
+      internalID: 1410057213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_210
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e035645f7cec9843abc57a45a27b5d6
+      internalID: -1920892331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_211
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab50d995c9627045a15d92646d411c6
+      internalID: 1225555949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_212
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abaf7b280727d9046b7566455da9bff9
+      internalID: 1850963049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_213
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3791bca24d9407449845d0f2dff8eeb0
+      internalID: -1180081877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_214
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 162
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7668f7186edc6504c9a93f4624692b7e
+      internalID: -1505314909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_216
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876146cebc470fe4797dd41b028a07f3
+      internalID: -817622016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_217
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec38491f89459314ba3a224ec56af7c3
+      internalID: 459881285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_218
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb409b76921d6d741a21332cbfc64049
+      internalID: 686592257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_219
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf12e14fc835e14583494870ea06436
+      internalID: 1511292388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_220
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc28bfdf49b5906499f303329f39fde2
+      internalID: -1256922748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_221
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4249490ee98604cafe4a65ef1107cb
+      internalID: -829115891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_222
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f3b7253349ccc4fad2b031ed038f3b
+      internalID: -1090247543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_223
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3c76a9615913044b8fa338e5ddf510
+      internalID: -2062545431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_224
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d1c0873c9c55a42b8a8a66f67a8aaa
+      internalID: 1190322969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_227
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6330a35893824c64c80e08a525ee196c
+      internalID: -611302855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_228
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ac31074acd8f04382d10cc52bc3b20
+      internalID: 528234644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_229
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8faff243a4d4b14dba56722dc5b753b
+      internalID: 1993760756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_230
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683256503d01ec247800a4dfcb0bb779
+      internalID: 1186809306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_231
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97722ca9dcd9844495d4d598fd4bc94
+      internalID: -11086998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_232
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646b4608114247a4d83d328436673d63
+      internalID: -2018191387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_233
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ad45f31c7cb6a409937f231342f315
+      internalID: 973471169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_234
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 130
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ff6eab5d51b964497a53d4f4ed073e
+      internalID: 1939583883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_243
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c467c73391daefa47bfd002d8f0b6085
+      internalID: 436759366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_244
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7496ee72e23304e4bb88db0cdb5b0a9c
+      internalID: 1053584831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_245
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce19de14c976a848afaad0019bf0c91
+      internalID: -736380823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_246
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950dedb4e4bbf504996ab530120db199
+      internalID: -270371073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_247
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a501e94348e66446b5306e4e709aae4
+      internalID: 169346914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_248
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ebade9d060eed141bf25cf0f0d0290b
+      internalID: -1657637262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_249
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b057a805a7c1ce245a0451cd208ba0fb
+      internalID: -1776730170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_250
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4490018e2f26c94192e0f7b16b7d734
+      internalID: 1233122989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_251
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2767ce6ad6623c4281e3754c8400369
+      internalID: -1797199696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_255
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d126d14a752e14abb3eb2595c545e4
+      internalID: 1531776374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_256
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7fe0d830ab2bd4daf21d6bec83b0c3
+      internalID: -1314881386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_257
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6e6504a9878064cba10a4a7b3cc62a
+      internalID: 1739100457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_258
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152322453bfd2b64ebef330d8f043bba
+      internalID: 130413616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_259
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1fce325f9beae48b9a540e0293bd94
+      internalID: -1740792029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_260
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ea0400473537f44ba23bb5537012b8
+      internalID: -929252466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Preview Keyboard & Mouse_261
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 98
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154788f0e6b245147b7dbd54364cadc0
+      internalID: -1890461309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9efee97561627124eb2d45eeb779a816
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      E: 1515120855
+      Keyboard & Mouse_: 1328994135
+      Keyboard & Mouse_+: -1494394285
+      Keyboard & Mouse_-: -1667694287
+      Keyboard & Mouse_A: -2005295584
+      Keyboard & Mouse_B: 2078816232
+      Keyboard & Mouse_C: -1387724136
+      Keyboard & Mouse_D: -850551972
+      Keyboard & Mouse_F: 595895026
+      Keyboard & Mouse_F1: -1495590451
+      Keyboard & Mouse_G: 422867175
+      Keyboard & Mouse_H: 218412689
+      Keyboard & Mouse_I: -294495353
+      Keyboard & Mouse_J: 259508628
+      Keyboard & Mouse_K: -806684120
+      Keyboard & Mouse_L: 189266147
+      Keyboard & Mouse_M: 841380075
+      Keyboard & Mouse_N: 744850316
+      Keyboard & Mouse_O: -415888001
+      Keyboard & Mouse_R: 1026995726
+      Keyboard & Mouse_S: -2052096418
+      Keyboard & Mouse_T: -1932517337
+      Keyboard & Mouse_U: 416796334
+      Keyboard & Mouse_V: 1728520437
+      Keyboard & Mouse_X: 436780524
+      Keyboard & Mouse_Y: 42249256
+      Keyboard & Mouse_Z: -1502042423
+      Preview Keyboard & Mouse_0: 1137023113
+      Preview Keyboard & Mouse_1: 2037842332
+      Preview Keyboard & Mouse_10: 604708087
+      Preview Keyboard & Mouse_100: 850538683
+      Preview Keyboard & Mouse_101: -17314361
+      Preview Keyboard & Mouse_102: -1102277454
+      Preview Keyboard & Mouse_103: 1468949557
+      Preview Keyboard & Mouse_104: -828818773
+      Preview Keyboard & Mouse_105: -751422043
+      Preview Keyboard & Mouse_106: 2103820010
+      Preview Keyboard & Mouse_107: 1632002910
+      Preview Keyboard & Mouse_11: 443408492
+      Preview Keyboard & Mouse_117: 291390106
+      Preview Keyboard & Mouse_118: 1218879031
+      Preview Keyboard & Mouse_119: -435107131
+      Preview Keyboard & Mouse_12: -673133058
+      Preview Keyboard & Mouse_120: 1725050815
+      Preview Keyboard & Mouse_121: -673575171
+      Preview Keyboard & Mouse_122: 1927689604
+      Preview Keyboard & Mouse_123: -881058046
+      Preview Keyboard & Mouse_124: 1923060274
+      Preview Keyboard & Mouse_125: 411533138
+      Preview Keyboard & Mouse_126: 748930683
+      Preview Keyboard & Mouse_127: 479559665
+      Preview Keyboard & Mouse_128: -1300183549
+      Preview Keyboard & Mouse_129: -1999636478
+      Preview Keyboard & Mouse_13: -2038374106
+      Preview Keyboard & Mouse_130: -952514255
+      Preview Keyboard & Mouse_131: -489166349
+      Preview Keyboard & Mouse_132: -2014710513
+      Preview Keyboard & Mouse_133: 1063965798
+      Preview Keyboard & Mouse_134: -594125053
+      Preview Keyboard & Mouse_135: -1301942577
+      Preview Keyboard & Mouse_136: -902612758
+      Preview Keyboard & Mouse_137: 1389751782
+      Preview Keyboard & Mouse_138: -1738126407
+      Preview Keyboard & Mouse_139: 131008788
+      Preview Keyboard & Mouse_14: 1658186688
+      Preview Keyboard & Mouse_140: -1071430988
+      Preview Keyboard & Mouse_141: 111732416
+      Preview Keyboard & Mouse_142: -160382519
+      Preview Keyboard & Mouse_143: -334468169
+      Preview Keyboard & Mouse_144: 1043009549
+      Preview Keyboard & Mouse_145: -692535007
+      Preview Keyboard & Mouse_146: -1161587270
+      Preview Keyboard & Mouse_147: -847590323
+      Preview Keyboard & Mouse_148: -1404873223
+      Preview Keyboard & Mouse_149: 557179260
+      Preview Keyboard & Mouse_15: -1607778982
+      Preview Keyboard & Mouse_150: -599995684
+      Preview Keyboard & Mouse_151: 1511850953
+      Preview Keyboard & Mouse_152: 1242217169
+      Preview Keyboard & Mouse_153: -994111501
+      Preview Keyboard & Mouse_154: -1717035298
+      Preview Keyboard & Mouse_155: 679706409
+      Preview Keyboard & Mouse_156: 1130904728
+      Preview Keyboard & Mouse_157: -768780924
+      Preview Keyboard & Mouse_158: -82706503
+      Preview Keyboard & Mouse_159: -215672829
+      Preview Keyboard & Mouse_16: 365824971
+      Preview Keyboard & Mouse_160: 66454264
+      Preview Keyboard & Mouse_161: -1391323401
+      Preview Keyboard & Mouse_169: 581959879
+      Preview Keyboard & Mouse_17: -1191435355
+      Preview Keyboard & Mouse_170: 1972989316
+      Preview Keyboard & Mouse_171: -1254665958
+      Preview Keyboard & Mouse_172: -2129282149
+      Preview Keyboard & Mouse_173: -1817085580
+      Preview Keyboard & Mouse_174: -1604959229
+      Preview Keyboard & Mouse_175: -1697070206
+      Preview Keyboard & Mouse_176: -190603125
+      Preview Keyboard & Mouse_177: -2094456703
+      Preview Keyboard & Mouse_178: 7189345
+      Preview Keyboard & Mouse_179: 79967638
+      Preview Keyboard & Mouse_18: -354796381
+      Preview Keyboard & Mouse_180: 1307284173
+      Preview Keyboard & Mouse_181: 723530093
+      Preview Keyboard & Mouse_182: -849164946
+      Preview Keyboard & Mouse_183: 1369595564
+      Preview Keyboard & Mouse_184: 511951050
+      Preview Keyboard & Mouse_185: 1648839385
+      Preview Keyboard & Mouse_186: 374147672
+      Preview Keyboard & Mouse_187: 703732743
+      Preview Keyboard & Mouse_188: 1865216613
+      Preview Keyboard & Mouse_189: -372795858
+      Preview Keyboard & Mouse_19: -781807086
+      Preview Keyboard & Mouse_190: 140847325
+      Preview Keyboard & Mouse_191: -403619671
+      Preview Keyboard & Mouse_192: 1014367657
+      Preview Keyboard & Mouse_193: -1921604977
+      Preview Keyboard & Mouse_194: 525462839
+      Preview Keyboard & Mouse_195: 1040427719
+      Preview Keyboard & Mouse_196: 1755671576
+      Preview Keyboard & Mouse_197: -751922818
+      Preview Keyboard & Mouse_198: 250199786
+      Preview Keyboard & Mouse_199: 1425625134
+      Preview Keyboard & Mouse_2: 879919851
+      Preview Keyboard & Mouse_20: 953022862
+      Preview Keyboard & Mouse_200: -532336180
+      Preview Keyboard & Mouse_201: -1752247220
+      Preview Keyboard & Mouse_202: -137577477
+      Preview Keyboard & Mouse_203: -515209256
+      Preview Keyboard & Mouse_204: -1342535271
+      Preview Keyboard & Mouse_205: 1093494371
+      Preview Keyboard & Mouse_206: -2018313605
+      Preview Keyboard & Mouse_207: 477748446
+      Preview Keyboard & Mouse_208: 1618079236
+      Preview Keyboard & Mouse_209: 1410057213
+      Preview Keyboard & Mouse_21: -1089384338
+      Preview Keyboard & Mouse_210: -1920892331
+      Preview Keyboard & Mouse_211: 1225555949
+      Preview Keyboard & Mouse_212: 1850963049
+      Preview Keyboard & Mouse_213: -1180081877
+      Preview Keyboard & Mouse_214: -1505314909
+      Preview Keyboard & Mouse_215: 704449241
+      Preview Keyboard & Mouse_216: -817622016
+      Preview Keyboard & Mouse_217: 459881285
+      Preview Keyboard & Mouse_218: 686592257
+      Preview Keyboard & Mouse_219: 1511292388
+      Preview Keyboard & Mouse_22: -1132388018
+      Preview Keyboard & Mouse_220: -1256922748
+      Preview Keyboard & Mouse_221: -829115891
+      Preview Keyboard & Mouse_222: -1090247543
+      Preview Keyboard & Mouse_223: -2062545431
+      Preview Keyboard & Mouse_224: 1190322969
+      Preview Keyboard & Mouse_225: 553776266
+      Preview Keyboard & Mouse_226: -892203044
+      Preview Keyboard & Mouse_227: -611302855
+      Preview Keyboard & Mouse_228: 528234644
+      Preview Keyboard & Mouse_229: 1993760756
+      Preview Keyboard & Mouse_23: 1554510532
+      Preview Keyboard & Mouse_230: 1186809306
+      Preview Keyboard & Mouse_231: -11086998
+      Preview Keyboard & Mouse_232: -2018191387
+      Preview Keyboard & Mouse_233: 973471169
+      Preview Keyboard & Mouse_234: 1939583883
+      Preview Keyboard & Mouse_235: 501028697
+      Preview Keyboard & Mouse_236: -2115717510
+      Preview Keyboard & Mouse_237: 688854984
+      Preview Keyboard & Mouse_238: -1910058827
+      Preview Keyboard & Mouse_239: 946850508
+      Preview Keyboard & Mouse_24: -1472150271
+      Preview Keyboard & Mouse_240: -594564979
+      Preview Keyboard & Mouse_241: -2009535572
+      Preview Keyboard & Mouse_242: -1139738679
+      Preview Keyboard & Mouse_243: 436759366
+      Preview Keyboard & Mouse_244: 1053584831
+      Preview Keyboard & Mouse_245: -736380823
+      Preview Keyboard & Mouse_246: -270371073
+      Preview Keyboard & Mouse_247: 169346914
+      Preview Keyboard & Mouse_248: -1657637262
+      Preview Keyboard & Mouse_249: -1776730170
+      Preview Keyboard & Mouse_25: -231177028
+      Preview Keyboard & Mouse_250: 1233122989
+      Preview Keyboard & Mouse_251: -1797199696
+      Preview Keyboard & Mouse_252: 439344940
+      Preview Keyboard & Mouse_253: 1956296691
+      Preview Keyboard & Mouse_254: -2027255881
+      Preview Keyboard & Mouse_255: 1531776374
+      Preview Keyboard & Mouse_256: -1314881386
+      Preview Keyboard & Mouse_257: 1739100457
+      Preview Keyboard & Mouse_258: 130413616
+      Preview Keyboard & Mouse_259: -1740792029
+      Preview Keyboard & Mouse_26: -735379243
+      Preview Keyboard & Mouse_260: -929252466
+      Preview Keyboard & Mouse_261: -1890461309
+      Preview Keyboard & Mouse_262: -492256647
+      Preview Keyboard & Mouse_263: -958608233
+      Preview Keyboard & Mouse_264: -2099665968
+      Preview Keyboard & Mouse_265: 937459980
+      Preview Keyboard & Mouse_266: -433112385
+      Preview Keyboard & Mouse_267: 2044549713
+      Preview Keyboard & Mouse_268: -1691440790
+      Preview Keyboard & Mouse_269: -615409034
+      Preview Keyboard & Mouse_27: -1522077822
+      Preview Keyboard & Mouse_270: -463451920
+      Preview Keyboard & Mouse_271: -1958193092
+      Preview Keyboard & Mouse_272: -855558175
+      Preview Keyboard & Mouse_273: -61290869
+      Preview Keyboard & Mouse_274: -493857028
+      Preview Keyboard & Mouse_275: -1099724210
+      Preview Keyboard & Mouse_276: -173244071
+      Preview Keyboard & Mouse_277: -1492824740
+      Preview Keyboard & Mouse_278: 1327784171
+      Preview Keyboard & Mouse_279: 157934196
+      Preview Keyboard & Mouse_28: 1164972740
+      Preview Keyboard & Mouse_280: 776541254
+      Preview Keyboard & Mouse_281: -320710730
+      Preview Keyboard & Mouse_282: 487128895
+      Preview Keyboard & Mouse_283: -2042417989
+      Preview Keyboard & Mouse_284: 1177105983
+      Preview Keyboard & Mouse_285: 452335526
+      Preview Keyboard & Mouse_286: 1313821115
+      Preview Keyboard & Mouse_287: 804840832
+      Preview Keyboard & Mouse_288: -2036538929
+      Preview Keyboard & Mouse_289: 3360267
+      Preview Keyboard & Mouse_29: -232138989
+      Preview Keyboard & Mouse_290: -484944588
+      Preview Keyboard & Mouse_291: 2087086868
+      Preview Keyboard & Mouse_292: 157112524
+      Preview Keyboard & Mouse_293: -738180380
+      Preview Keyboard & Mouse_294: 1221000595
+      Preview Keyboard & Mouse_295: -1398477645
+      Preview Keyboard & Mouse_296: 1549523625
+      Preview Keyboard & Mouse_297: -1862947361
+      Preview Keyboard & Mouse_298: -791203117
+      Preview Keyboard & Mouse_299: 1747472245
+      Preview Keyboard & Mouse_3: 806312182
+      Preview Keyboard & Mouse_30: -529643833
+      Preview Keyboard & Mouse_300: 70085867
+      Preview Keyboard & Mouse_301: 488954323
+      Preview Keyboard & Mouse_302: 1827375493
+      Preview Keyboard & Mouse_303: -1933469991
+      Preview Keyboard & Mouse_304: 1732838599
+      Preview Keyboard & Mouse_305: 2094962576
+      Preview Keyboard & Mouse_306: 643644883
+      Preview Keyboard & Mouse_307: 1721958772
+      Preview Keyboard & Mouse_308: 768180137
+      Preview Keyboard & Mouse_309: -1257644501
+      Preview Keyboard & Mouse_31: -769416695
+      Preview Keyboard & Mouse_310: 1318875355
+      Preview Keyboard & Mouse_311: -855906234
+      Preview Keyboard & Mouse_312: 2009666180
+      Preview Keyboard & Mouse_313: -695692229
+      Preview Keyboard & Mouse_314: 1909231136
+      Preview Keyboard & Mouse_315: -1712532103
+      Preview Keyboard & Mouse_316: 997925586
+      Preview Keyboard & Mouse_317: 1402742675
+      Preview Keyboard & Mouse_318: 1876102331
+      Preview Keyboard & Mouse_319: -379382954
+      Preview Keyboard & Mouse_32: -1831842033
+      Preview Keyboard & Mouse_320: 458935159
+      Preview Keyboard & Mouse_321: -1969210955
+      Preview Keyboard & Mouse_322: -1606251611
+      Preview Keyboard & Mouse_323: 616575974
+      Preview Keyboard & Mouse_324: -1003905880
+      Preview Keyboard & Mouse_325: 691382126
+      Preview Keyboard & Mouse_326: -1216358408
+      Preview Keyboard & Mouse_327: 1934846311
+      Preview Keyboard & Mouse_328: -1527532382
+      Preview Keyboard & Mouse_329: 257159849
+      Preview Keyboard & Mouse_33: 1735984340
+      Preview Keyboard & Mouse_330: -1570738787
+      Preview Keyboard & Mouse_331: 585349337
+      Preview Keyboard & Mouse_332: 149888493
+      Preview Keyboard & Mouse_333: -2024176575
+      Preview Keyboard & Mouse_334: 1217371225
+      Preview Keyboard & Mouse_335: 627690848
+      Preview Keyboard & Mouse_336: -443646711
+      Preview Keyboard & Mouse_337: 1233917854
+      Preview Keyboard & Mouse_338: -757159482
+      Preview Keyboard & Mouse_339: -257196849
+      Preview Keyboard & Mouse_34: 1736077787
+      Preview Keyboard & Mouse_340: -1112802701
+      Preview Keyboard & Mouse_341: -1377335279
+      Preview Keyboard & Mouse_342: -51961172
+      Preview Keyboard & Mouse_343: -1490244951
+      Preview Keyboard & Mouse_344: -1535729568
+      Preview Keyboard & Mouse_345: -787522190
+      Preview Keyboard & Mouse_346: 640618803
+      Preview Keyboard & Mouse_347: 94345820
+      Preview Keyboard & Mouse_348: 414337883
+      Preview Keyboard & Mouse_349: -1861706690
+      Preview Keyboard & Mouse_35: 752803438
+      Preview Keyboard & Mouse_350: 1015756927
+      Preview Keyboard & Mouse_351: -926302013
+      Preview Keyboard & Mouse_36: 451230100
+      Preview Keyboard & Mouse_37: -1749165996
+      Preview Keyboard & Mouse_38: -1443964342
+      Preview Keyboard & Mouse_39: 2041858802
+      Preview Keyboard & Mouse_4: -1949885001
+      Preview Keyboard & Mouse_40: 1949852246
+      Preview Keyboard & Mouse_41: -2031149921
+      Preview Keyboard & Mouse_42: -710948624
+      Preview Keyboard & Mouse_43: 1774168171
+      Preview Keyboard & Mouse_44: -1726422700
+      Preview Keyboard & Mouse_45: -519186956
+      Preview Keyboard & Mouse_46: 1066469423
+      Preview Keyboard & Mouse_47: 1542335985
+      Preview Keyboard & Mouse_48: 1618513423
+      Preview Keyboard & Mouse_49: 1763247375
+      Preview Keyboard & Mouse_5: 1687559121
+      Preview Keyboard & Mouse_50: 1559164967
+      Preview Keyboard & Mouse_51: -1779751378
+      Preview Keyboard & Mouse_52: 102549584
+      Preview Keyboard & Mouse_53: -1784438728
+      Preview Keyboard & Mouse_6: 194211305
+      Preview Keyboard & Mouse_66: -63505189
+      Preview Keyboard & Mouse_67: -1114753353
+      Preview Keyboard & Mouse_68: -1725403803
+      Preview Keyboard & Mouse_69: -522393872
+      Preview Keyboard & Mouse_7: 137485568
+      Preview Keyboard & Mouse_70: 807801275
+      Preview Keyboard & Mouse_71: 2024268538
+      Preview Keyboard & Mouse_72: -933979187
+      Preview Keyboard & Mouse_73: 1583133862
+      Preview Keyboard & Mouse_74: 589975312
+      Preview Keyboard & Mouse_75: 29775408
+      Preview Keyboard & Mouse_76: 919480571
+      Preview Keyboard & Mouse_77: -582108153
+      Preview Keyboard & Mouse_78: -1627174550
+      Preview Keyboard & Mouse_79: -2075499368
+      Preview Keyboard & Mouse_8: 960892649
+      Preview Keyboard & Mouse_80: -1677304504
+      Preview Keyboard & Mouse_81: 1461915523
+      Preview Keyboard & Mouse_82: -897607392
+      Preview Keyboard & Mouse_83: 989145424
+      Preview Keyboard & Mouse_84: -252690209
+      Preview Keyboard & Mouse_85: 1514903859
+      Preview Keyboard & Mouse_86: 582877020
+      Preview Keyboard & Mouse_87: -686419292
+      Preview Keyboard & Mouse_88: -1702156960
+      Preview Keyboard & Mouse_89: -105193231
+      Preview Keyboard & Mouse_9: 313006571
+      Preview Keyboard & Mouse_90: 330295838
+      Preview Keyboard & Mouse_91: -616137150
+      Preview Keyboard & Mouse_92: -564947734
+      Preview Keyboard & Mouse_93: -887912247
+      Preview Keyboard & Mouse_94: 320173221
+      Preview Keyboard & Mouse_95: 2108911081
+      Preview Keyboard & Mouse_96: -1397013065
+      Preview Keyboard & Mouse_97: 745324432
+      Preview Keyboard & Mouse_98: -1594695729
+      Preview Keyboard & Mouse_99: 1700800092
+      Q: 604110846
+      W: 1343843229
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

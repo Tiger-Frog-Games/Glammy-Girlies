@@ -1,0 +1,12 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace TigerFrogGames
+{
+    [CreateAssetMenu(fileName = "new #SCRIPTNAME#", menuName = "ScriptableObject/#SCRIPTNAME#")]
+    public class #SCRIPTNAME# : ScriptableObject
+    {
+        
+    }
+}
