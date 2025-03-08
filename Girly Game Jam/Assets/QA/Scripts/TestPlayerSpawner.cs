@@ -16,14 +16,12 @@ namespace TigerFrogGames
             
             ir.Fire += FireAction;
             ir.Aim += AimAction;
-            ir.Pause += PauseAction;
         }
         
         private void OnDisable()
         {
             ir.Fire -= FireAction;
             ir.Aim -= AimAction;
-            ir.Pause -= PauseAction;
         }
         
         private void FireAction(bool arg0)
@@ -43,19 +41,6 @@ namespace TigerFrogGames
         private void AimAction(Vector2 arg0)
         {
             Debug.Log(arg0);
-        }
-        
-        private void PauseAction(bool arg0)
-        {
-            if (arg0 == true)
-            {
-                Debug.Log("Pause action called On Button Down");
-            }
-
-            else
-            {
-                Debug.Log("Pause action called Button Up");
-            }
         }
         
         /* ------- Methods ------- */

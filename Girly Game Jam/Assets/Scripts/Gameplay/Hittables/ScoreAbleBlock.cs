@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace TigerFrogGames
 {
+    [SelectionBase]
     public class ScoreAbleBlock : Hittable
     {
         /* ------- Variables ------- */
@@ -27,7 +28,7 @@ namespace TigerFrogGames
             canBeHit = false;
             base.OnHit(collisionInfo);
 
-            bodyRenderer.DOColor(PlayerInfoLibrary.Instance.GetColorByTeam(collisionInfo.TriggeringPlayerBall.PlayerTeam)  , 5.2f);
+            bodyRenderer.DOColor(PlayerInfoLibrary.Instance.GetColorByTeam(collisionInfo.TriggeringPlayerOrb.PlayerTeam) , .2f);
             
             ScoreManager.Instance.AddScore(scoreToGive, collisionInfo.HitPosition);
                 

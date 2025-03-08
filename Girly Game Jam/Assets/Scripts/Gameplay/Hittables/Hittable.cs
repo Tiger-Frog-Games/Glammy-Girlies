@@ -15,7 +15,7 @@ namespace TigerFrogGames
             
             Debug.Log("Hit");
             
-            if (other.gameObject.TryGetComponent(out PlayerBall ball))
+            if (other.gameObject.TryGetComponent(out PlayerOrb ball))
             {
                 
                 var contactPoint = other.contacts[0].point;
@@ -32,13 +32,13 @@ namespace TigerFrogGames
 
     public struct CollisionInfo
     {
-        public PlayerBall TriggeringPlayerBall { private set; get; }
+        public PlayerOrb TriggeringPlayerOrb { private set; get; }
         public Hittable Hittable { private set; get; }
         public Vector2 HitPosition { private set; get; }
 
-        public CollisionInfo(PlayerBall triggeringPlayerBall, Hittable hittable, Vector2 hitPosition)
+        public CollisionInfo(PlayerOrb triggeringPlayerOrb, Hittable hittable, Vector2 hitPosition)
         {
-            this.TriggeringPlayerBall = triggeringPlayerBall;
+            this.TriggeringPlayerOrb = triggeringPlayerOrb;
             this.Hittable = hittable;
             this.HitPosition = hitPosition;
         }

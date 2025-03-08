@@ -1,9 +1,10 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace TigerFrogGames
 {
-    public class PlayerBall : MonoBehaviour
+    public class PlayerOrb : MonoBehaviour
     {
         /* ------- Variables ------- */
 
@@ -11,7 +12,7 @@ namespace TigerFrogGames
 
         [Header("Dependencies")]
         [SerializeField] private SpriteRenderer bodyRenderer;
-        [SerializeField] private PlayerBallMovement playerBallMovement;
+        [FormerlySerializedAs("playerBallMovement")] [SerializeField] private PlayerOrbMovement playerOrbMovement;
        
         //remove the abaility to set from editor once Ash fires the cannons. 
         [field: SerializeField] public PlayerTeam PlayerTeam { private set; get; }
@@ -20,7 +21,7 @@ namespace TigerFrogGames
         
         /* ------- Unity Methods ------- */
 
-        private void Start()
+        private void Awake()
         {
             ID = SerializableGuid.NewGuid();
         }
@@ -29,7 +30,7 @@ namespace TigerFrogGames
         {
             if(hitByBall) return;
             
-            if(other.gameObject.TryGetComponent(out PlayerBall otherPlayerBall))
+            if(other.gameObject.TryGetComponent(out PlayerOrb otherPlayerBall))
             {
                 Debug.Log(otherPlayerBall);
                 otherPlayerBall.HitByBall();
@@ -43,13 +44,13 @@ namespace TigerFrogGames
         
         /* ------- Methods ------- */
 
-        public void SetUp(PlayerTeam team, Vector2 initialAngle)
+        public void SetUp(PlayerTeam team, Vector2 initialAngle, PlayerOrb pairedOrb)
         {
             PlayerTeam = team;
             SetUpVisual();
             
             
-            playerBallMovement.SetUp(ID, initialAngle);
+            playerOrbMovement.SetUp(ID, initialAngle, pairedOrb);
         }
 
         private void SetUpVisual()
