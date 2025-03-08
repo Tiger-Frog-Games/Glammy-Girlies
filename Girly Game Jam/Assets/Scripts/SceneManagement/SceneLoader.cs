@@ -27,11 +27,27 @@ namespace TigerFrogGames
 
         public readonly SceneLoadManager sceneLoadManager = new SceneLoadManager(); 
         
+#if UNITY_EDITOR
+        [Header("Development")]
+        [SerializeField] private bool startInGameplay = false;
+#endif
+        
         /* ------- Unity Methods ------- */
 
         private async void Start()
         {
-            await LoadMainMenu();
+#if UNITY_EDITOR
+            if (startInGameplay)
+            {
+                await LoadGameplay();
+            }
+            else
+            {
+#endif
+                await LoadMainMenu();
+#if UNITY_EDITOR
+            }
+#endif
         }
         
 #if UNITY_EDITOR

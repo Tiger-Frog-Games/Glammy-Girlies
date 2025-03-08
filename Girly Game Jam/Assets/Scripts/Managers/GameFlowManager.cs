@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace TigerFrogGames
 {
-    public class GraphicsLoader : MonoBehaviour
+    public class GameFlowManager : MonoBehaviour
     {
         /* ------- Variables ------- */
 

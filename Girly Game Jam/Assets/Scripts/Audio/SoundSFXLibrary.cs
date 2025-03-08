@@ -8,6 +8,7 @@ namespace TigerFrogGames
     {
         [Header("Main Menu")]
         [field: SerializeField] public SoundData HoverButtonMainMenu {get; private set;}
+        [field: SerializeField] public SoundData BlockHit {get; private set;}
 
 
         public SoundData GetSoundByEnum(SoundDataName soundDataName)
@@ -16,7 +17,8 @@ namespace TigerFrogGames
             {
                 case SoundDataName.HoverButtonMainMenu:
                     return HoverButtonMainMenu;
-                    break;
+                case SoundDataName.BlockHit:
+                    return BlockHit;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(soundDataName), soundDataName, null);
             }
@@ -27,6 +29,7 @@ namespace TigerFrogGames
 
     public enum SoundDataName
     {
-        HoverButtonMainMenu
+        HoverButtonMainMenu,
+        BlockHit
     }
 }

@@ -7,8 +7,9 @@ namespace TigerFrogGames
     public class KeyBindingSettingsLoader : MonoBehaviour
     {
         /* ------- Variables ------- */
+        [FormerlySerializedAs("inputReaderExample")]
         [FormerlySerializedAs("inputReader")]
-        [SerializeField] private InputReaderExample inputReaderExample;
+        [SerializeField] private InputReaderGirlyGame inputReaderGirlyGame;
 
 
         /* ------- Unity Methods ------- */
@@ -18,13 +19,13 @@ namespace TigerFrogGames
             string rebinds = PlayerPrefs.GetString("Rebinds");
             if (!string.IsNullOrEmpty(rebinds))
             {
-                inputReaderExample.SetKeyBindings(rebinds);
+                inputReaderGirlyGame.SetKeyBindings(rebinds);
             }
         }
 
         private void OnDestroy()
         {
-            PlayerPrefs.SetString("Rebinds",inputReaderExample.GetSavedKeyBindings());
+            PlayerPrefs.SetString("Rebinds",inputReaderGirlyGame.GetSavedKeyBindings());
         }
 
         /* ------- Methods ------- */

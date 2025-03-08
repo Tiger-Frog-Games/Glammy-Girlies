@@ -21,7 +21,7 @@ namespace TigerFrogGames
         [SerializeField] private GameObject overLayObject;
         [SerializeField] private TMP_Text overLayText;
 
-        [SerializeField] private InputReaderExample inputReaderExample;
+        [FormerlySerializedAs("inputReaderExample")] [SerializeField] private InputReaderGirlyGame inputReaderGirlyGame;
         
         private InputControlScheme DisplayScheme;
         
@@ -58,9 +58,9 @@ namespace TigerFrogGames
             m_resetButton.onClick.RemoveListener(ResetBindingsToDefault);
         }
     
-        public void SetUp(InputActionReference inputActionReferenceIn, InputReaderExample inputReaderExampleIn , InputControlScheme currentScheme, GameObject overLayObjectIn, TMP_Text overlayTextIn)
+        public void SetUp(InputActionReference inputActionReferenceIn, InputReaderGirlyGame inputReaderGirlyGameIn , InputControlScheme currentScheme, GameObject overLayObjectIn, TMP_Text overlayTextIn)
         {
-            inputReaderExample = inputReaderExampleIn;
+            inputReaderGirlyGame = inputReaderGirlyGameIn;
             inputActionReference = inputActionReferenceIn;
             
             gameObject.name = $"Rebind UI - {inputActionReference.name}";
@@ -84,7 +84,7 @@ namespace TigerFrogGames
         
         public void UpdateBindingDisplay()
         {
-          string displayString = inputReaderExample.GetBindingDisplayString(
+          string displayString = inputReaderGirlyGame.GetBindingDisplayString(
                 inputActionReference.name,
                 DisplayScheme ,
                 displayStringOptions,
@@ -110,13 +110,13 @@ namespace TigerFrogGames
         {
             overLayObject?.SetActive(true);
 
-            if (overLayObject != null && overLayText != null && inputReaderExample.isBindingInProgress() == false &&
+            if (overLayObject != null && overLayText != null && inputReaderGirlyGame.isBindingInProgress() == false &&
                 m_BindingText != null)
             {
                 m_BindingText.text = "<Waiting...>";
             }
             
-            inputReaderExample.StartInteractiveRebind(inputActionReference.action.name, DisplayScheme.ToString(), RebindStarted , RebindCompleted, RebindCanceled);
+            inputReaderGirlyGame.StartInteractiveRebind(inputActionReference.action.name, DisplayScheme.ToString(), RebindStarted , RebindCompleted, RebindCanceled);
         }
 
         private void RebindStarted(string displayString)
@@ -127,7 +127,7 @@ namespace TigerFrogGames
 
         private void ResetBindingsToDefault()
         {
-            inputReaderExample.ResetBindingsToDefault(inputActionReference.action.name, DisplayScheme.ToString());
+            inputReaderGirlyGame.ResetBindingsToDefault(inputActionReference.action.name, DisplayScheme.ToString());
         }
         
         private void RebindCompleted()
@@ -146,7 +146,7 @@ namespace TigerFrogGames
         
         private void OnValidate()
         {
-            if(inputReaderExample == null) return;
+            if(inputReaderGirlyGame == null) return;
             
             UpdateActionLabel();
             UpdateBindingDisplay();

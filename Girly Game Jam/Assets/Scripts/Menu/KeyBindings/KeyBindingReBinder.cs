@@ -14,7 +14,7 @@ namespace TigerFrogGames
     public class KeyBindingReBinder : MonoBehaviour
     {
         /* ------- Variables ------- */
-       [FormerlySerializedAs("inputReader")] [SerializeField] private InputReaderExample inputReaderExample;
+       [FormerlySerializedAs("inputReaderExample")] [FormerlySerializedAs("inputReader")] [SerializeField] private InputReaderGirlyGame inputReaderGirlyGame;
        [SerializeField] private InputActionAsset inputActionAsset;
        [SerializeField] private InputActionReference[] myPlayerInputsToBind;
        
@@ -53,7 +53,7 @@ namespace TigerFrogGames
             leftSchemeChangeButton.onClick.AddListener(delegate { ChangeLabel(1); });
             rightSchemeChangeButton.onClick.AddListener(delegate { ChangeLabel(-1); });
             
-            allSchemes = inputReaderExample.GetControlSchemes();
+            allSchemes = inputReaderGirlyGame.GetControlSchemes();
             currentSchemeIndex = 0;
             
             UpdateScheme();
@@ -94,7 +94,7 @@ namespace TigerFrogGames
         [ContextMenu("print Rebind Ids")]
         private void PrintRebindIDs()
         {
-            inputReaderExample.PrintBindingIds();
+            inputReaderGirlyGame.PrintBindingIds();
             
         }
         
@@ -122,7 +122,7 @@ namespace TigerFrogGames
         
         private void OnValidate()
         {
-            if (inputReaderExample == null)
+            if (inputReaderGirlyGame == null)
             {
                 Debug.LogWarning("Input Reader is null.");
                 return;
@@ -175,7 +175,7 @@ namespace TigerFrogGames
             
             foreach (InputActionReference inputActionToRebind in myPlayerInputsToBind)// inputReader.GetAllActions())
             {
-                
+                Debug.Log(inputActionToRebind.name);
                 if (!mapNameLabelsAdded.Contains( inputActionToRebind.action.actionMap.name))
                 {
                     string label = inputActionToRebind.action.actionMap.name;
@@ -188,7 +188,7 @@ namespace TigerFrogGames
 
                 var createdRebindUIElement = Instantiate(prefabRebind, uiRebindElementRoot.transform);
 
-                createdRebindUIElement.SetUp(inputActionToRebind, inputReaderExample, allSchemes[currentSchemeIndex],
+                createdRebindUIElement.SetUp(inputActionToRebind, inputReaderGirlyGame, allSchemes[currentSchemeIndex],
                     uiRebindOverLay, uiRebindOverLayText);
 
                 UIRebindElements.Add(createdRebindUIElement);
