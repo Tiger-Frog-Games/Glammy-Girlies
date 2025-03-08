@@ -19,26 +19,26 @@ namespace TigerFrogGames
 
         /* ------- Methods ------- */
 
-        [SerializeField] private Transform testSpawnPointOne;
-        [SerializeField] private Transform testSpawnPointTwo;
+        // [SerializeField] private Transform testSpawnPointOne;
+        // [SerializeField] private Transform testSpawnPointTwo;
 
         public void SpawnPlayerBall(Vector2 position, Vector2 direction)
         {
             Debug.Log($"{position} - {direction}");
         }
         
-        public void TestSpawnPlayer()
-        {
-            PlayerOrb playerOrb = Instantiate(prefabPlayerOrb, testSpawnPointOne.position, testSpawnPointOne.rotation);
-            PlayerOrb playerOrb2 = Instantiate(prefabPlayerOrb, testSpawnPointTwo.position, testSpawnPointTwo.rotation);
+        // public void TestSpawnPlayer()
+        // {
+        //     PlayerOrb playerOrb = Instantiate(prefabPlayerOrb, testSpawnPointOne.position, testSpawnPointOne.rotation);
+        //     PlayerOrb playerOrb2 = Instantiate(prefabPlayerOrb, testSpawnPointTwo.position, testSpawnPointTwo.rotation);
             
             
-            playerOrb.SetUp(PlayerTeam.AesticOne, testSpawnPointOne.eulerAngles, playerOrb2);
-            playerOrb2.SetUp(PlayerTeam.AesticTwo,testSpawnPointTwo.eulerAngles, playerOrb);
+        //     playerOrb.SetUp(PlayerTeam.AesticOne, testSpawnPointOne.eulerAngles, playerOrb2);
+        //     playerOrb2.SetUp(PlayerTeam.AesticTwo,testSpawnPointTwo.eulerAngles, playerOrb);
             
-            AllPlayerOrbs.Add( playerOrb.ID, playerOrb );
-            AllPlayerOrbs.Add( playerOrb2.ID, playerOrb2 );
-        }
+        //     AllPlayerOrbs.Add( playerOrb.ID, playerOrb );
+        //     AllPlayerOrbs.Add( playerOrb2.ID, playerOrb2 );
+        // }
 
         public Vector2 GetDirectionToNearestOppositeOrb(SerializableGuid owningId)
         {

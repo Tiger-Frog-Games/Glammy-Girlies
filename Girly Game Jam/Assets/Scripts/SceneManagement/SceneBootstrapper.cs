@@ -12,6 +12,9 @@ namespace TigerFrogGames
         {
             Debug.Log("SceneBootstrapper initialized");
             await SceneManager.LoadSceneAsync("Core", LoadSceneMode.Single);
+
+            Debug.Log("Game has started!");
+            
         }
     }
 }
