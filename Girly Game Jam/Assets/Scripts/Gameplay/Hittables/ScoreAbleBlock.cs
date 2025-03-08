@@ -30,6 +30,10 @@ namespace TigerFrogGames
 
             bodyRenderer.DOColor(PlayerInfoLibrary.Instance.GetColorByTeam(collisionInfo.TriggeringPlayerOrb.PlayerTeam) , .2f);
             
+            bool isGoingLeft = this.transform.position.x <
+                               collisionInfo.HitPosition.x;
+            //collisionInfo.TriggeringPlayerOrb.PlayerTeam
+            ScorePopupManager.Instance.SpawnScorePopUp(this.transform.position, isGoingLeft, PlayerTeam.Both , scoreToGive);
             ScoreManager.Instance.AddScore(scoreToGive, collisionInfo.HitPosition);
                 
             SoundManager.Instance.CreateSoundBuilder()
@@ -37,9 +41,5 @@ namespace TigerFrogGames
                 .Play(SoundSFXLibrary.Instance.GetSoundByEnum(soundToPlay));
         }
         
-        private void StartColorTween(Color targetColor, bool instant)
-        {
-            
-        }
     }
 }

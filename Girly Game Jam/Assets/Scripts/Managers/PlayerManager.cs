@@ -11,7 +11,7 @@ namespace TigerFrogGames
         [Header("Dependencies")]
         [SerializeField] private PlayerOrb prefabPlayerOrb;
 
-        private Dictionary<SerializableGuid, PlayerOrb> AllPlayerBalls = new();
+        private Dictionary<SerializableGuid, PlayerOrb> AllPlayerOrbs = new();
 
         /* ------- Unity Methods ------- */
         
@@ -29,27 +29,26 @@ namespace TigerFrogGames
         
         public void TestSpawnPlayer()
         {
-            PlayerOrb playerOrb = Instantiate(prefabPlayerOrb, testSpawnPointOne);
+            PlayerOrb playerOrb = Instantiate(prefabPlayerOrb, testSpawnPointOne.position, testSpawnPointOne.rotation);
+            PlayerOrb playerOrb2 = Instantiate(prefabPlayerOrb, testSpawnPointTwo.position, testSpawnPointTwo.rotation);
             
             
-            PlayerOrb playerOrb2 = Instantiate(prefabPlayerOrb, testSpawnPointTwo);
+            playerOrb.SetUp(PlayerTeam.AesticOne, testSpawnPointOne.eulerAngles, playerOrb2);
+            playerOrb2.SetUp(PlayerTeam.AesticTwo,testSpawnPointTwo.eulerAngles, playerOrb);
             
-            playerOrb.SetUp(PlayerTeam.AesticOne, Vector2.right, playerOrb2);
-            playerOrb2.SetUp(PlayerTeam.AesticTwo, Vector2.left, playerOrb);
-            
-            AllPlayerBalls.Add( playerOrb.ID, playerOrb );
-            AllPlayerBalls.Add( playerOrb2.ID, playerOrb2 );
+            AllPlayerOrbs.Add( playerOrb.ID, playerOrb );
+            AllPlayerOrbs.Add( playerOrb2.ID, playerOrb2 );
         }
 
-        public Vector2 GetDirectionToNearestOppositeBall(SerializableGuid owningId)
+        public Vector2 GetDirectionToNearestOppositeOrb(SerializableGuid owningId)
         {
-            var owningUnit = AllPlayerBalls[owningId];
+            var owningUnit = AllPlayerOrbs[owningId];
             var teamToLookFor = owningUnit.PlayerTeam != PlayerTeam.AesticOne ? PlayerTeam.AesticOne : PlayerTeam.AesticTwo;
 
             float closestDistance = float.MaxValue;
             SerializableGuid closestOwner = default;
             
-            foreach (var VARIABLE in AllPlayerBalls)
+            foreach (var VARIABLE in AllPlayerOrbs)
             {
                 if (VARIABLE.Value.PlayerTeam == teamToLookFor &&
                     Vector3.Distance(owningUnit.transform.position, VARIABLE.Value.transform.position) <
@@ -60,7 +59,7 @@ namespace TigerFrogGames
                 }
             }
             
-            var closestUnit = AllPlayerBalls[closestOwner];
+            var closestUnit = AllPlayerOrbs[closestOwner];
             
             return  closestUnit.transform.position - owningUnit.transform.position;
         }

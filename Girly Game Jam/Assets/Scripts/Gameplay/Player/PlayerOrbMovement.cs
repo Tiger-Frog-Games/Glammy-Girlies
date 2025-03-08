@@ -15,7 +15,7 @@ namespace TigerFrogGames
         [SerializeField] private float startingVelocity = 100f;
 
         [SerializeField] private float attractionThreshHold = 5f;
-        [SerializeField] private float attractionVelocity = 1f;
+        [SerializeField] private float attractionVelocity = .1f;
 
         
         private SerializableGuid owningId;

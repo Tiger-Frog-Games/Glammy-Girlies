@@ -23,7 +23,22 @@ namespace TigerFrogGames
                 OnHit(info);
             }
         }
-        
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if(!canBeHit) return;
+            
+            Debug.Log("Trigger Hit",other);
+            
+            if (other.gameObject.TryGetComponent(out PlayerOrb ball))
+            {
+                
+                var contactPoint = other.transform.position;
+                CollisionInfo info = new CollisionInfo(ball,this, contactPoint);
+                OnHit(info);
+            }
+        }
+
         protected virtual void OnHit(CollisionInfo collisionInfo)
         {
             OnHitEvent?.Invoke(collisionInfo);

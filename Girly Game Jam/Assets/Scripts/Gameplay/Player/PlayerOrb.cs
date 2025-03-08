@@ -33,6 +33,7 @@ namespace TigerFrogGames
             if(other.gameObject.TryGetComponent(out PlayerOrb otherPlayerBall))
             {
                 Debug.Log(otherPlayerBall);
+                hitByBall = true;
                 otherPlayerBall.HitByBall();
             }
         }
