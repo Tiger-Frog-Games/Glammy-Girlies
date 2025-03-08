@@ -27,6 +27,9 @@ namespace TigerFrogGames
         {
             Debug.Log("Hit orb");
             canBeHit = false;
+            
+            transform.parent = null;
+            
             base.OnHit(collisionInfo);
 
             ParticleManager.Instance.PlayBubbleParticle(transform.position);
@@ -40,7 +43,7 @@ namespace TigerFrogGames
             var ySequence = DOTween.Sequence().Append( bodyTransform.DOLocalMoveY(.2f, .2f).SetEase(Ease.OutQuad)).Append(
                     bodyTransform.DOMoveY(LevelManager.Instance.GetLevelBottomY(),fallTime).SetEase(Ease.InQuad)
                 );
-            //1/transform.position.y * LevelManager.Instance.GetLevelBottomY()
+           
             ySequence.Play();
 
             transform.DOShakeRotation(.2f, new Vector3(0, 0, 30f));
