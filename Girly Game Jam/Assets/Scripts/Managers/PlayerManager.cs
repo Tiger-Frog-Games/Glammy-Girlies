@@ -26,9 +26,16 @@ namespace TigerFrogGames
         [SerializeField] private Transform testSpawnPointOne;
         [SerializeField] private Transform testSpawnPointTwo;
 
-        public void SpawnPlayerBall(Vector2 position, Vector2 direction)
+        public void SpawnPlayerBall(Vector2 positionOne, Vector2 directionOne, Vector2 positionTwo, Vector2 directionTwo)
         {
-            Debug.Log($"{position} - {direction}");
+            PlayerOrb playerOrb = Instantiate(prefabPlayerOrb, positionOne,  testSpawnPointOne.rotation);
+            PlayerOrb playerOrb2 = Instantiate(prefabPlayerOrb, testSpawnPointTwo.position, testSpawnPointTwo.rotation);
+            
+            playerOrb.SetUp(PlayerTeam.AesticOne, testSpawnPointOne.eulerAngles, playerOrb2);
+            playerOrb2.SetUp(PlayerTeam.AesticTwo,testSpawnPointTwo.eulerAngles, playerOrb);
+            
+            AllPlayerOrbs.Add( playerOrb.ID, playerOrb );
+            AllPlayerOrbs.Add( playerOrb2.ID, playerOrb2 );
         }
         
         [ContextMenu("Spawn Player Ball")]
@@ -37,8 +44,7 @@ namespace TigerFrogGames
             PlayerOrb playerOrb = Instantiate(prefabPlayerOrb, testSpawnPointOne.position, testSpawnPointOne.rotation);
             PlayerOrb playerOrb2 = Instantiate(prefabPlayerOrb, testSpawnPointTwo.position, testSpawnPointTwo.rotation);
             
-            
-             playerOrb.SetUp(PlayerTeam.AesticOne, testSpawnPointOne.eulerAngles, playerOrb2);
+            playerOrb.SetUp(PlayerTeam.AesticOne, testSpawnPointOne.eulerAngles, playerOrb2);
             playerOrb2.SetUp(PlayerTeam.AesticTwo,testSpawnPointTwo.eulerAngles, playerOrb);
             
              AllPlayerOrbs.Add( playerOrb.ID, playerOrb );
