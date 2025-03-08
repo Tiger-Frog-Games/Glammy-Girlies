@@ -62,10 +62,10 @@ namespace TigerFrogGames
 
         /* ------- Methods ------- */
 
-        public void SpawnScorePopUp( Vector3 position, bool isGoingLeft, PlayerTeam team, int score )
+        public void SpawnScorePopUp( ScorePopUpData popUpData, int score )
         {
             TMP_ColorGradient colorGradient;
-            switch (team)
+            switch (popUpData.Team)
             {
                 case PlayerTeam.Both:
                     colorGradient = mixedGradient;
@@ -77,14 +77,44 @@ namespace TigerFrogGames
                     colorGradient = aesticTwoGradient;
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(team), team, null);
+                    throw new ArgumentOutOfRangeException(nameof(popUpData.Team), popUpData.Team, null);
             }
             
             float size = Mathf.Lerp(fontSize.x, fontSize.y,  1/ ( score / biggestScore));
             
             var pulledObject = scoreTextPool.Pull();
-            pulledObject.Display(position, isGoingLeft, size, score, colorGradient);
+            pulledObject.Display(popUpData.Position, popUpData.IsGoingLeft, size, score, colorGradient);
         }
         
     }
+
+    public struct ScorePopUpData : IEquatable<ScorePopUpData>
+    {
+        public Vector3 Position { private set; get; }
+        public bool IsGoingLeft { private set; get; }
+        public PlayerTeam Team { private set; get; }
+
+        public ScorePopUpData(Vector3 position, bool isGoingLeft, PlayerTeam team)
+        {
+            this.Position = position;
+            this.IsGoingLeft = isGoingLeft;
+            this.Team = team;
+        }
+
+        public bool Equals(ScorePopUpData other)
+        {
+            return Position.Equals(other.Position) && IsGoingLeft == other.IsGoingLeft && Team == other.Team;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is ScorePopUpData other && Equals(other);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Position, IsGoingLeft, (int)Team);
+        }
+    }
+    
 }

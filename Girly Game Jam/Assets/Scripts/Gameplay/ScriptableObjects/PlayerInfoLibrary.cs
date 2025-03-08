@@ -10,6 +10,7 @@ namespace TigerFrogGames
         public Color AesticOneColor;
         
         public Color AesticTwoColor;
+        public Color AesticBoth;
 
         public Color GetColorByTeam(PlayerTeam playerTeam)
         {
@@ -19,6 +20,8 @@ namespace TigerFrogGames
                     return AesticOneColor;
                 case PlayerTeam.AesticTwo:
                     return AesticTwoColor;
+                case PlayerTeam.Both:
+                    return AesticBoth;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(playerTeam), playerTeam, null);
             }

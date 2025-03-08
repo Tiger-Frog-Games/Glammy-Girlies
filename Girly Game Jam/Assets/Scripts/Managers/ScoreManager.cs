@@ -15,8 +15,14 @@ namespace TigerFrogGames
 
         /* ------- Methods ------- */
 
-        public void AddScore( int scoreToAdd, Vector2 scorePosition = default)
+        public void AddScore(int scoreToAdd, ScorePopUpData scorePopUpData = default)
         {
+            if (scorePopUpData.Equals(default(ScorePopUpData)))
+            {
+                ScorePopupManager.Instance.SpawnScorePopUp(scorePopUpData , scoreToAdd);
+            }
+
+        
             Debug.Log("Adding score to ScoreManager: " + scoreToAdd);
         }
         

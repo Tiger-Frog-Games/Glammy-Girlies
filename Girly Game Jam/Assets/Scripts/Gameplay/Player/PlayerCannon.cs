@@ -51,35 +51,35 @@ namespace TigerFrogGames
                 // send the player mouse position to the log upon clicking left mouse button
                 Vector3 mousePosition = Input.mousePosition;
 
-                {
-                    Debug.Log("Mouse position x position is: " + mousePosition.x);
-                    Debug.Log("Mouse position y position is: " + mousePosition.y);
+                
+               // Debug.Log("Mouse position x position is: " + mousePosition.x);
+               // Debug.Log("Mouse position y position is: " + mousePosition.y);
 
-                    // creating a raycast point
-                    // Ray ray = new Ray(transform.position, transform.forward);
+                // creating a raycast point
+                // Ray ray = new Ray(transform.position, transform.forward);
 
-                    // alternative ray creation that starts at the center of the camera's viewport using a helper function
-                    // Ray ray2 = Camera.main.ViewportPointToRay(new Vector3 (0.5f, 0.5f, 0));                    
+                // alternative ray creation that starts at the center of the camera's viewport using a helper function
+                // Ray ray2 = Camera.main.ViewportPointToRay(new Vector3 (0.5f, 0.5f, 0));                    
 
-                    // PlayerManager.Instance.TestSpawnPlayer();
+                // PlayerManager.Instance.TestSpawnPlayer();
 
-                    // creates a ray from the mouse position
-                    // Ray ray3 = Camera.main.ScreenPointToRay(Input.mousePosition);
+                // creates a ray from the mouse position
+                // Ray ray3 = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-                    // convert the mouse position to world space in 2D (using Screen To World Point). spits out the x, y, and z position.
-                    Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                    Debug.Log(Input.mousePosition);
+                // convert the mouse position to world space in 2D (using Screen To World Point). spits out the x, y, and z position.
+                Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+               // Debug.Log(Input.mousePosition);
 
-                    // spits out totally different position from the one above
-                    Debug.Log(worldPosition);
+                // spits out totally different position from the one above
+                //Debug.Log(worldPosition);
 
-                    Ray ray = new Ray(transform.position, transform.forward);
+                Ray ray = new Ray(transform.position, transform.forward);
 
-                    // Debug.DrawRay(Vector3 worldPosition, Vector3 direction);
+                // Debug.DrawRay(Vector3 worldPosition, Vector3 direction);
 
 
 
-                 }   
+                  
 
             }
 

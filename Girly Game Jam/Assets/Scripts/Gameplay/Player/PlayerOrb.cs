@@ -10,47 +10,57 @@ namespace TigerFrogGames
 
         public SerializableGuid ID { private set; get; }
 
-        [Header("Dependencies")]
+        [Header("Dependencies")] 
         [SerializeField] private SpriteRenderer bodyRenderer;
-        [FormerlySerializedAs("playerBallMovement")] [SerializeField] private PlayerOrbMovement playerOrbMovement;
-       
-        //remove the abaility to set from editor once Ash fires the cannons. 
-        [field: SerializeField] public PlayerTeam PlayerTeam { private set; get; }
+        [SerializeField] private PlayerOrbMovement playerOrbMovement;
 
-        private bool hitByBall = false;
         
+        [Header("Variables")] 
+        [SerializeField] private float destructionTime = .8f;
+        [SerializeField] private int ticksPerSecond = 4;
+        [SerializeField] private float DistanceCheck = 1f;
+
+        private PlayerOrb pairedOrb;
+
+        public PlayerTeam PlayerTeam { private set; get; }
+        private bool hitByBall = false;
+        private FrequencyCountDownTimer collisionTimer;
+
         /* ------- Unity Methods ------- */
 
         private void Awake()
         {
             ID = SerializableGuid.NewGuid();
+
+            collisionTimer = new(destructionTime, ticksPerSecond);
         }
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if(hitByBall) return;
-            
-            if(other.gameObject.TryGetComponent(out PlayerOrb otherPlayerBall))
+            if (hitByBall) return;
+
+            if (other.gameObject.Equals( pairedOrb.gameObject))
             {
-                Debug.Log(otherPlayerBall);
+                Debug.Log(pairedOrb);
                 hitByBall = true;
-                otherPlayerBall.HitByBall();
+                pairedOrb.SetHitByBall(true);
+                
+                collisionTimer.OnTick += CheckIfInRangeOfDestruction;
+                collisionTimer.OnTimerStop += RemovePlayerOrbs;
+                collisionTimer.Start();
             }
         }
 
-        public void HitByBall()
-        {
-            hitByBall = true;
-        }
-        
+
         /* ------- Methods ------- */
 
-        public void SetUp(PlayerTeam team, Vector2 initialAngle, PlayerOrb pairedOrb)
+        public void SetUp(PlayerTeam team, Vector2 initialAngle, PlayerOrb pairedOrbIn)
         {
+            pairedOrb = pairedOrbIn;
             PlayerTeam = team;
             SetUpVisual();
-            
-            
+
+
             playerOrbMovement.SetUp(ID, initialAngle, pairedOrb);
         }
 
@@ -65,6 +75,34 @@ namespace TigerFrogGames
                 bodyRenderer.color = PlayerInfoLibrary.Instance.AesticTwoColor;
             }
         }
-        
-    }
+
+        public void SetHitByBall( bool state)
+        {
+            hitByBall = state;
+        }
+
+        private void CheckIfInRangeOfDestruction()
+        {
+            if (Vector3.Distance(transform.position, pairedOrb.transform.position) > DistanceCheck)
+            {
+                collisionTimer.OnTick -= CheckIfInRangeOfDestruction;
+                collisionTimer.OnTimerStop -= RemovePlayerOrbs;
+                collisionTimer.Stop();
+                
+                hitByBall = false;
+                pairedOrb.SetHitByBall(false);
+            }
+            
+        }
+
+        private void RemovePlayerOrbs()
+        {
+            Debug.Log("Removing player orbs");
+            
+            PlayerManager.Instance.RemovePlayerOrb(pairedOrb);
+            PlayerManager.Instance.RemovePlayerOrb(this);
+        }
+
+
+}
 }

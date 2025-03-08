@@ -13,8 +13,6 @@ namespace TigerFrogGames
         {
             if(!canBeHit) return;
             
-            Debug.Log("Hit");
-            
             if (other.gameObject.TryGetComponent(out PlayerOrb ball))
             {
                 
@@ -27,8 +25,6 @@ namespace TigerFrogGames
         private void OnTriggerEnter2D(Collider2D other)
         {
             if(!canBeHit) return;
-            
-            Debug.Log("Trigger Hit",other);
             
             if (other.gameObject.TryGetComponent(out PlayerOrb ball))
             {

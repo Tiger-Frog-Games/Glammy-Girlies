@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -6,6 +7,9 @@ namespace TigerFrogGames
 {
     public class PlayerManager : Singleton<PlayerManager>
     {
+        public static event Action OnRoundOver;
+        public static event Action OnGameOver;
+        
         /* ------- Variables ------- */
         [FormerlySerializedAs("prefabPlayerBall")]
         [Header("Dependencies")]
@@ -19,26 +23,27 @@ namespace TigerFrogGames
 
         /* ------- Methods ------- */
 
-        // [SerializeField] private Transform testSpawnPointOne;
-        // [SerializeField] private Transform testSpawnPointTwo;
+        [SerializeField] private Transform testSpawnPointOne;
+        [SerializeField] private Transform testSpawnPointTwo;
 
         public void SpawnPlayerBall(Vector2 position, Vector2 direction)
         {
             Debug.Log($"{position} - {direction}");
         }
         
-        // public void TestSpawnPlayer()
-        // {
-        //     PlayerOrb playerOrb = Instantiate(prefabPlayerOrb, testSpawnPointOne.position, testSpawnPointOne.rotation);
-        //     PlayerOrb playerOrb2 = Instantiate(prefabPlayerOrb, testSpawnPointTwo.position, testSpawnPointTwo.rotation);
+        [ContextMenu("Spawn Player Ball")]
+        public void TestSpawnPlayer()
+         {
+            PlayerOrb playerOrb = Instantiate(prefabPlayerOrb, testSpawnPointOne.position, testSpawnPointOne.rotation);
+            PlayerOrb playerOrb2 = Instantiate(prefabPlayerOrb, testSpawnPointTwo.position, testSpawnPointTwo.rotation);
             
             
-        //     playerOrb.SetUp(PlayerTeam.AesticOne, testSpawnPointOne.eulerAngles, playerOrb2);
-        //     playerOrb2.SetUp(PlayerTeam.AesticTwo,testSpawnPointTwo.eulerAngles, playerOrb);
+             playerOrb.SetUp(PlayerTeam.AesticOne, testSpawnPointOne.eulerAngles, playerOrb2);
+            playerOrb2.SetUp(PlayerTeam.AesticTwo,testSpawnPointTwo.eulerAngles, playerOrb);
             
-        //     AllPlayerOrbs.Add( playerOrb.ID, playerOrb );
-        //     AllPlayerOrbs.Add( playerOrb2.ID, playerOrb2 );
-        // }
+             AllPlayerOrbs.Add( playerOrb.ID, playerOrb );
+             AllPlayerOrbs.Add( playerOrb2.ID, playerOrb2 );
+        }
 
         public Vector2 GetDirectionToNearestOppositeOrb(SerializableGuid owningId)
         {
@@ -62,6 +67,20 @@ namespace TigerFrogGames
             var closestUnit = AllPlayerOrbs[closestOwner];
             
             return  closestUnit.transform.position - owningUnit.transform.position;
+        }
+
+        public void RemovePlayerOrb(PlayerOrb playerOrb)
+        {
+            AllPlayerOrbs.Remove(playerOrb.ID);
+            
+            Destroy(playerOrb.gameObject);
+
+            if (AllPlayerOrbs.Count == 0)
+            {
+                OnRoundOver?.Invoke();
+                //check if lives are over 
+                //if they are invoke the event OnGameOver
+            }
         }
     }
 }

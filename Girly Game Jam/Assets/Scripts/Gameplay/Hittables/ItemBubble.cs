@@ -60,13 +60,30 @@ namespace TigerFrogGames
             bool isGoingLeft = this.transform.position.x <
                                collisionInfo.HitPosition.x;
             
-            ScorePopupManager.Instance.SpawnScorePopUp(this.transform.position, isGoingLeft, collisionInfo.TriggeringPlayerOrb.PlayerTeam, scoreToGive);
-            
-            ScoreManager.Instance.AddScore(scoreToGive, collisionInfo.HitPosition);
+            ScorePopUpData scorePopUpData = new ScorePopUpData( collisionInfo.HitPosition, isGoingLeft, collisionInfo.TriggeringPlayerOrb.PlayerTeam );
+            ScoreManager.Instance.AddScore(scoreToGive, scorePopUpData);
                 
             SoundManager.Instance.CreateSoundBuilder()
                 .WithRandomPitch()
                 .Play(SoundSFXLibrary.Instance.GetSoundByEnum(soundToPlay));
+        }
+
+        [ContextMenu("Test Set Team")]
+        public void TestSetTeam()
+        {
+            spriteRendererIcing.DOColor(PlayerInfoLibrary.Instance.GetColorByTeam(PlayerTeam.AesticOne) , .2f);
+        }
+        
+        [ContextMenu("Test Set Team2")]
+        public void TestSetTeamtwo()
+        {
+            spriteRendererIcing.DOColor(PlayerInfoLibrary.Instance.GetColorByTeam(PlayerTeam.AesticTwo) , .2f);
+        }
+        
+        [ContextMenu("Test Set Both")]
+        public void TestSetTeamBoth()
+        {
+            spriteRendererIcing.DOColor(PlayerInfoLibrary.Instance.GetColorByTeam(PlayerTeam.Both) , .2f);
         }
         
     }
