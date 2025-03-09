@@ -38,7 +38,7 @@ namespace TigerFrogGames
 
             if (LevelManager.Instance.IsOutOfLevels())
             {
-                youWinText.enabled = true;
+                youWinText.gameObject.SetActive(true);
                 toMainMenuButton.gameObject.SetActive(true);
                 
                 nextLevelButton.gameObject.SetActive(false);
@@ -78,7 +78,7 @@ namespace TigerFrogGames
         
         private void CallOpenMainMenu(string movementName)
         {
-            uiMover.OnMovementOver -= CallNextLevel;
+            uiMover.OnMovementOver -= CallOpenMainMenu;
             SceneLoader.Instance.LoadMainMenu();
         }
         

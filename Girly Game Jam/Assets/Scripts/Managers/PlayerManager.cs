@@ -91,6 +91,8 @@ namespace TigerFrogGames
 
         private void RefreshLivesAndEnableCannon()
         {
+            PlayerShotsRemaining.Value = startingShots;
+            
             playerCannon.EnableAim(true);
             playerCannon.EnableShot();
         }
