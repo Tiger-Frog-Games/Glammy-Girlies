@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,7 +12,8 @@ namespace TigerFrogGames
     public class LevelManager : Singleton<LevelManager>
     {
         public event Action OnOutOfLevels;
-
+        public event Action OnLevelVictory;
+        
         public event Action OnLevelDoneLoading;
         /* ------- Variables ------- */
         
@@ -23,6 +26,11 @@ namespace TigerFrogGames
         [SerializeField] private GameObject[] levelPrefabs;
         [SerializeField] private int currentLevel = 0;
 
+        private List<ItemBubble>  foodBubbles = new ();
+        private List<ScoreAbleBlock> scoreAbleBlocks = new(); 
+        
+        public bool DidLevelComplete { get; private set; }
+        
         private GameObject loadedLevel;
         /* ------- Unity Methods ------- */
         
@@ -32,6 +40,8 @@ namespace TigerFrogGames
         [ContextMenu("Load Level")]
         public void LoadNextLevel()
         {
+            scoreAbleBlocks.Clear();
+            
             if (currentLevel > levelPrefabs.Length - 1)
             {
                 OnOutOfLevels?.Invoke();
@@ -64,14 +74,43 @@ namespace TigerFrogGames
             }
             yield return new WaitForSeconds(.8f);
             OnLevelDoneLoading?.Invoke();
+            DidLevelComplete = false;
         }
         
         [ContextMenu("unload level")]
         public void UnloadLevel()
         {
+            StartCoroutine(LoadLevelFadeOut());
+        }
+
+        private IEnumerator LoadLevelFadeOut()
+        {
+            foodBubbles.Clear();
             foreach (var VARIABLE in loadedLevel.GetComponentsInChildren<SpriteRenderer>())
             {
                 VARIABLE.DOFade(0, .8f);
+            }
+            yield return new WaitForSeconds(.8f);
+            Destroy(loadedLevel);
+        }
+        
+        public void AddFoodBubble(ItemBubble foodBubble)
+        {
+            foodBubbles.Add(foodBubble);
+        }
+
+        public void AddScoreAbleBlock(ScoreAbleBlock scoreAbleBlock)
+        {
+            scoreAbleBlocks.Add(scoreAbleBlock);
+        }
+        
+        public void RemoveFoodBubble(ItemBubble foodBubble)
+        {
+            foodBubbles.Remove(foodBubble);
+            if (foodBubbles.Count == 0)
+            {
+                OnLevelVictory?.Invoke();
+                DidLevelComplete = true;
             }
         }
         
@@ -85,6 +124,24 @@ namespace TigerFrogGames
         {
             return levelBottomMarker.transform.position.y;
         }
-        
+
+        public async Task CleanUpLevel()
+        {
+            Debug.Log("Cleaning up level");
+
+            while (scoreAbleBlocks.Count > 0)
+            {
+                var blockToRemove = scoreAbleBlocks[^1];
+
+                ParticleManager.Instance.PlayBlockCleanUp(blockToRemove.transform.position);
+                
+                scoreAbleBlocks.RemoveAt(scoreAbleBlocks.Count-1);
+                Destroy(blockToRemove.gameObject);
+                await Task.Delay(100);
+            }
+            
+            
+            Debug.Log("Cleaning done cleaning up level");
+        }
     }
 }

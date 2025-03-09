@@ -7,6 +7,7 @@ namespace TigerFrogGames
         /* ------- Variables ------- */
         [Header("Dependencies")]
         [SerializeField] private ParticleSystem particleSystemBubble;
+        [SerializeField] private ParticleSystem particleSystemBlockBreack;
        
 
         /* ------- Unity Methods ------- */
@@ -29,6 +30,15 @@ namespace TigerFrogGames
             
             particleSystemBubble.Emit(emitParams, 12);*/
         }
-        
+
+        public void PlayBlockCleanUp(Vector3 transformPosition)
+        {
+            ParticleSystem.EmitParams emitParams = new ParticleSystem.EmitParams
+            {
+                position = transformPosition
+            };
+
+            particleSystemBlockBreack.Emit(emitParams, 12);
+        }
     }
 }

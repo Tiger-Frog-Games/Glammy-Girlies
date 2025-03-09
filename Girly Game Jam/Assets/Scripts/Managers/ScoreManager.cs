@@ -6,7 +6,7 @@ namespace TigerFrogGames
     {
         /* ------- Variables ------- */
         
-        public int TotalScore { private set; get; } = 0;
+        public Observer<int> TotalScore { private set; get; } = new(0);
         public int RoundScore { private set; get; } = 0;
 
         /* ------- Unity Methods ------- */
@@ -17,13 +17,12 @@ namespace TigerFrogGames
 
         public void AddScore(int scoreToAdd, ScorePopUpData scorePopUpData = default)
         {
-            if (scorePopUpData.Equals(default(ScorePopUpData)))
+            if (!scorePopUpData.Equals(default(ScorePopUpData)))
             {
                 ScorePopupManager.Instance.SpawnScorePopUp(scorePopUpData , scoreToAdd);
             }
-
-        
-            Debug.Log("Adding score to ScoreManager: " + scoreToAdd);
+            
+            TotalScore.Value += scoreToAdd;
         }
         
         

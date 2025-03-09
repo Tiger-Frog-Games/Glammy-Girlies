@@ -4,7 +4,9 @@ using UnityEngine;
 namespace TigerFrogGames
 {
     public class PlayerCannonHolder : MonoBehaviour
-    { 
+    {
+        public event Action OnCannonFire;
+        
         /* ------- Variables ------- */
         
         [Header("Dependencies")]
@@ -15,7 +17,9 @@ namespace TigerFrogGames
 
         
         
-        private bool isInFiringMode = false;
+        private bool canAim = false;
+        private bool canFire = false;
+        
         private bool isUsingMouse = true;
         
         /* ------- Unity Methods ------- */
@@ -39,7 +43,7 @@ namespace TigerFrogGames
         
         private void Update()
         {
-            if(!isInFiringMode) return;
+            if(!canAim) return;
             
             if(!LevelManager.Instance.IsMouseInsideBounds()) return;
             
@@ -51,15 +55,28 @@ namespace TigerFrogGames
 
         /* ------- Methods ------- */
 
+        public void EnableAim(bool state)
+        {
+            canAim = state;
+        }
+        
+        public void EnableShot()
+        {
+            canFire = true;
+        }
+        
         private void FireAction(bool arg0)
         {
-            if(!isInFiringMode) return;
+            if(!canFire) return;
             
             if (arg0)
             {
-                Debug.Log("Fire action called On Button Down");
                 PlayerManager.Instance.SpawnPlayerBall( cannonTransformLeft, rightCannonTransformRight );
+                OnCannonFire?.Invoke();
+                canFire = false;
             }
         }
+
+       
     }
 }

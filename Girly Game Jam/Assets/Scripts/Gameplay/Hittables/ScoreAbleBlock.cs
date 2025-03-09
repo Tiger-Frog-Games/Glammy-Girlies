@@ -27,7 +27,9 @@ namespace TigerFrogGames
         {
             canBeHit = false;
             base.OnHit(collisionInfo);
-
+            
+            LevelManager.Instance.AddScoreAbleBlock(this);
+            
             bodyRenderer.DOColor(PlayerInfoLibrary.Instance.GetColorByTeam(collisionInfo.TriggeringPlayerOrb.PlayerTeam) , .2f);
             
             bool isGoingLeft = this.transform.position.x <

@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -18,15 +19,19 @@ namespace TigerFrogGames
         [SerializeField] private SoundDataName soundToPlay;
         
         /* ------- Unity Methods ------- */
-        
-       
+
+        public void Start()
+        {
+            LevelManager.Instance.AddFoodBubble(this);
+        }
 
         /* ------- Methods ------- */
         
         protected override void OnHit(CollisionInfo collisionInfo)
         {
-            Debug.Log("Hit orb");
             canBeHit = false;
+            
+            LevelManager.Instance.RemoveFoodBubble(this);
             
             transform.parent = null;
             
@@ -35,15 +40,12 @@ namespace TigerFrogGames
             ParticleManager.Instance.PlayBubbleParticle(transform.position);
             
             spriteRendererIcing.DOColor(PlayerInfoLibrary.Instance.GetColorByTeam(collisionInfo.TriggeringPlayerOrb.PlayerTeam) , .2f);
-
-            
             
             float fallTime = Mathf.Max(.2f, (transform.position.y - LevelManager.Instance.GetLevelBottomY())/4);
             
             var ySequence = DOTween.Sequence().Append( bodyTransform.DOLocalMoveY(.2f, .2f).SetEase(Ease.OutQuad)).Append(
                     bodyTransform.DOMoveY(LevelManager.Instance.GetLevelBottomY(),fallTime).SetEase(Ease.InQuad)
                 );
-           
             ySequence.Play();
 
             transform.DOShakeRotation(.2f, new Vector3(0, 0, 30f));

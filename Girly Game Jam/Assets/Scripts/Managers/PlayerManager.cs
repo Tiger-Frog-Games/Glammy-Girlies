@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,7 +10,6 @@ namespace TigerFrogGames
     {
         public static event Action OnRoundOver;
         public static event Action OnGameOver;
-        public static event Action OnGameWin;
         
         /* ------- Variables ------- */
         
@@ -17,12 +17,36 @@ namespace TigerFrogGames
         [Header("Dependencies")]
         [SerializeField] private PlayerOrb prefabPlayerOrb;
 
+        [SerializeField] private PlayerCannonHolder playerCannon;
+        
+        [Header("Variables")] 
+        [SerializeField] private int startingShots = 3;
+        
+        public Observer<int> PlayerShotsRemaining { private set; get; }
+
         private Dictionary<SerializableGuid, PlayerOrb> AllPlayerOrbs = new();
 
         /* ------- Unity Methods ------- */
-        
-       
 
+        protected override void InitializeSingleton()
+        {
+            base.InitializeSingleton();
+            PlayerShotsRemaining = new Observer<int>(startingShots);
+        }
+
+        private void Start()
+        {
+            LevelManager.Instance.OnLevelDoneLoading += RefreshLivesAndEnableCannon;
+            playerCannon.OnCannonFire += OnPlayerCannonFire;
+        }
+
+
+        private void OnDisable()
+        {
+            LevelManager.Instance.OnLevelDoneLoading -= RefreshLivesAndEnableCannon;
+            playerCannon.OnCannonFire -= OnPlayerCannonFire;
+        }
+        
         /* ------- Methods ------- */
         
         public void SpawnPlayerBall(Transform transformPosition, Transform transformPositionTwo)
@@ -37,7 +61,7 @@ namespace TigerFrogGames
             AllPlayerOrbs.Add( playerOrb2.ID, playerOrb2 );
         }
         
-        public void RemovePlayerOrb(PlayerOrb playerOrb)
+        public async Task RemovePlayerOrb(PlayerOrb playerOrb)
         {
             AllPlayerOrbs.Remove(playerOrb.ID);
             
@@ -46,16 +70,37 @@ namespace TigerFrogGames
             if (AllPlayerOrbs.Count == 0)
             {
                 OnRoundOver?.Invoke();
+
+                Debug.Log("before");
+                await LevelManager.Instance.CleanUpLevel();
+                Debug.Log("after");
                 
-                //check to see if there are 
+                if (PlayerShotsRemaining.Value == 0 && !LevelManager.Instance.DidLevelComplete)
+                {
+                    OnGameOver?.Invoke();
+                }else if (PlayerShotsRemaining.Value > 0)
+                {
+                    playerCannon.EnableShot();
+                }
                 
                 
                 //check if lives are over 
                 //if they are invoke the event OnGameOver
             }
         }
-        
 
+        private void RefreshLivesAndEnableCannon()
+        {
+            playerCannon.EnableAim(true);
+            playerCannon.EnableShot();
+        }
+
+        
+        private void OnPlayerCannonFire()
+        {
+            PlayerShotsRemaining.Value--;
+        }
+        
         //No longer used.
         //Instead orbs are paired up when fired
         /*public Vector2 GetDirectionToNearestOppositeOrb(SerializableGuid owningId)
