@@ -37,6 +37,7 @@ namespace TigerFrogGames
         private void Start()
         {
             LevelManager.Instance.OnLevelDoneLoading += RefreshLivesAndEnableCannon;
+            
             playerCannon.OnCannonFire += OnPlayerCannonFire;
         }
 
@@ -66,26 +67,25 @@ namespace TigerFrogGames
             AllPlayerOrbs.Remove(playerOrb.ID);
             
             Destroy(playerOrb.gameObject);
-
+            
             if (AllPlayerOrbs.Count == 0)
             {
                 OnRoundOver?.Invoke();
-
-                Debug.Log("before");
-                await LevelManager.Instance.CleanUpLevel();
-                Debug.Log("after");
                 
-                if (PlayerShotsRemaining.Value == 0 && !LevelManager.Instance.DidLevelComplete)
+                await LevelManager.Instance.CleanUpLevel();
+                
+                if (LevelManager.Instance.DidLevelComplete)
                 {
-                    OnGameOver?.Invoke();
-                }else if (PlayerShotsRemaining.Value > 0)
-                {
-                    playerCannon.EnableShot();
+                    return;
                 }
                 
+                if (PlayerShotsRemaining.Value == 0)
+                {
+                    OnGameOver?.Invoke();
+                    return;
+                }
                 
-                //check if lives are over 
-                //if they are invoke the event OnGameOver
+                playerCannon.EnableShot();
             }
         }
 

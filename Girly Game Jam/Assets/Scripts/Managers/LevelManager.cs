@@ -24,7 +24,7 @@ namespace TigerFrogGames
         [SerializeField] private GameObject levelRoot;
         
         [SerializeField] private GameObject[] levelPrefabs;
-        [SerializeField] private int currentLevel = 0;
+        [SerializeField] private int currentLevel = -1;
 
         private List<ItemBubble>  foodBubbles = new ();
         private List<ScoreAbleBlock> scoreAbleBlocks = new(); 
@@ -37,18 +37,24 @@ namespace TigerFrogGames
 
         /* ------- Methods ------- */
 
+        public bool IsOutOfLevels()
+        {
+            return currentLevel > levelPrefabs.Length - 1;
+        }
+        
         [ContextMenu("Load Level")]
         public void LoadNextLevel()
         {
-            scoreAbleBlocks.Clear();
             
+            scoreAbleBlocks.Clear();
+            currentLevel++;
             if (currentLevel > levelPrefabs.Length - 1)
             {
                 OnOutOfLevels?.Invoke();
                 return;
             }
 
-
+           
             StartCoroutine(LoadLevelFadeIn());
 
         }

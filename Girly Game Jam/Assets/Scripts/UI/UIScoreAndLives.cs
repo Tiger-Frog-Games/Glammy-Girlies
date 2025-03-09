@@ -16,10 +16,10 @@ namespace TigerFrogGames
         private void Start()
         {
             PlayerManager.Instance.PlayerShotsRemaining.OnStatChange.AddListener(OnLivesChange);
-            ScoreManager.Instance.TotalScore.OnStatChange.AddListener(OnScoreChange);
+            ScoreManager.Instance.RoundScore.OnStatChange.AddListener(OnScoreChange);
 
             OnLivesChange(PlayerManager.Instance.PlayerShotsRemaining.Value);
-            OnScoreChange(ScoreManager.Instance.TotalScore.Value);
+            OnScoreChange(ScoreManager.Instance.RoundScore.Value);
         }
 
         /* ------- Methods ------- */

@@ -27,8 +27,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 9132836701956867610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4ca0edf1b701234fa919ee50e93069f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
   rb: {fileID: 176533936847082150}
   startingVelocity: 7.5
   attractionThreshHold: 1
-  attractionVelocity: 10
+  attractionVelocity: 12.5
 --- !u!50 &176533936847082150
 Rigidbody2D:
   serializedVersion: 5
@@ -169,7 +169,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0.005
+  m_LinearDamping: 0.01
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -218,7 +218,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.1
+  m_Radius: 0.2
 --- !u!1 &8368302304476637631
 GameObject:
   m_ObjectHideFlags: 0

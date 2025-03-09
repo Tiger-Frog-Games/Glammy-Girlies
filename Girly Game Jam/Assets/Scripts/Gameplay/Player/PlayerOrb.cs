@@ -41,7 +41,6 @@ namespace TigerFrogGames
 
             if (other.gameObject.Equals( pairedOrb.gameObject))
             {
-                Debug.Log(pairedOrb);
                 hitByBall = true;
                 pairedOrb.SetHitByBall(true);
                 
@@ -65,14 +64,7 @@ namespace TigerFrogGames
 
         private void SetUpVisual()
         {
-            if (PlayerTeam == PlayerTeam.AesticOne)
-            {
-                bodyRenderer.color = PlayerInfoLibrary.Instance.AesticOneColor;
-            }
-            else
-            {
-                bodyRenderer.color = PlayerInfoLibrary.Instance.AesticTwoColor;
-            }
+            bodyRenderer.sprite = PlayerTeam == PlayerTeam.AesticOne ? PlayerInfoLibrary.Instance.AesticOneSprite : PlayerInfoLibrary.Instance.AesticTwoSprite;
         }
 
         public void SetHitByBall( bool state)

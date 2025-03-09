@@ -12,6 +12,9 @@ namespace TigerFrogGames
         public Color AesticTwoColor;
         public Color AesticBoth;
 
+        public Sprite AesticOneSprite;
+        public Sprite AesticTwoSprite;
+        
         public Color GetColorByTeam(PlayerTeam playerTeam)
         {
             switch (playerTeam)

@@ -8,7 +8,7 @@ namespace TigerFrogGames
         /* ------- Variables ------- */
         
         public Observer<int> TotalScore { private set; get; } = new(0);
-        public int RoundScore { private set; get; } = 0;
+        public Observer<int> RoundScore { private set; get; } = new(0);
 
         /* ------- Unity Methods ------- */
 
@@ -19,9 +19,15 @@ namespace TigerFrogGames
             LevelManager.Instance.OnLevelDoneLoading += SaveScore;
         }
 
+        private void OnDestroy()
+        {
+            LevelManager.Instance.OnLevelDoneLoading -= SaveScore;
+        }
+
         private void SaveScore()
         {
             scoreBeforeLevel = TotalScore.Value;
+            RoundScore.Value = 0;
         }
         
         
@@ -30,12 +36,13 @@ namespace TigerFrogGames
         
         public void AddScore(int scoreToAdd, ScorePopUpData scorePopUpData = default)
         {
-            if (!scorePopUpData.Equals(default(ScorePopUpData)))
+            if (!scorePopUpData.Equals(default))
             {
                 ScorePopupManager.Instance.SpawnScorePopUp(scorePopUpData , scoreToAdd);
             }
             
             TotalScore.Value += scoreToAdd;
+            RoundScore.Value += scoreToAdd;
         }
         
         

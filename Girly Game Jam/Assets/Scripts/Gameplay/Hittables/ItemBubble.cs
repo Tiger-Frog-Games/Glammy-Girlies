@@ -43,16 +43,18 @@ namespace TigerFrogGames
             
             float fallTime = Mathf.Max(.2f, (transform.position.y - LevelManager.Instance.GetLevelBottomY())/4);
             
-            var ySequence = DOTween.Sequence().Append( bodyTransform.DOLocalMoveY(.2f, .2f).SetEase(Ease.OutQuad)).Append(
-                    bodyTransform.DOMoveY(LevelManager.Instance.GetLevelBottomY(),fallTime).SetEase(Ease.InQuad)
-                );
+            var ySequence = DOTween.Sequence().Append( 
+                bodyTransform.DOLocalMoveY(.2f, .2f).SetEase(Ease.OutQuad)).Append(
+                bodyTransform.DOMoveY(LevelManager.Instance.GetLevelBottomY(),fallTime).SetEase(Ease.InQuad)
+                .OnComplete(()=> Debug.Log("Award the shop a food item")));
+            
             ySequence.Play();
 
             transform.DOShakeRotation(.2f, new Vector3(0, 0, 30f));
 
             foreach (var bodySprite in bodySprites)
             {
-                bodySprite.DOFade(0f, .2f).SetDelay(fallTime).OnComplete(()=> Debug.Log("Award the shop a food item") );
+                bodySprite.DOFade(0f, .2f).SetDelay(fallTime);
             }
             
             

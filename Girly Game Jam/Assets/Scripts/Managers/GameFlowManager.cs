@@ -21,7 +21,6 @@ namespace TigerFrogGames
 
         public void StartIntroGame()
         {
-            Debug.Log("Intro Game");
             if (SkipIntro)
             {
                 LoadNextLevel();
