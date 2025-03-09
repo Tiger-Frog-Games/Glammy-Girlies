@@ -1721,6 +1721,8 @@ MonoBehaviour:
   mainCamera: {fileID: 1170267988}
   levelRoot: {fileID: 1406188589}
   levelPrefabs:
+  - {fileID: 6364111388185886454, guid: 48d25024ffe94504284fba34a08651a0, type: 3}
+  - {fileID: 8907764090790991150, guid: 5b8120a599403454ba581a612964713e, type: 3}
   - {fileID: 6364111388185886454, guid: ac7bf0a2845d6ea418176d0c33f1fbba, type: 3}
   currentLevel: 0
 --- !u!1 &1121182770
@@ -8063,7 +8065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabPlayerOrb: {fileID: 2115844666466658753, guid: 331aecf4f2042eb47b1937f48a70f37b, type: 3}
   playerCannon: {fileID: 602602763}
-  startingShots: 3
+  startingShots: 6
 --- !u!1 &2046990877
 GameObject:
   m_ObjectHideFlags: 0
