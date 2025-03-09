@@ -34,8 +34,8 @@ namespace TigerFrogGames
             }
             
             
-            sequence = DOTween.Sequence().Append(transform.DOPath(path,speed,PathType.CatmullRom, PathMode.Sidescroller2D )).Append(
-                transform.DOPath(reversePath,speed,PathType.CatmullRom, PathMode.Sidescroller2D )
+            sequence = DOTween.Sequence().Append(transform.DOPath(path,speed,PathType.Linear, PathMode.Sidescroller2D )).Append(
+                transform.DOPath(reversePath,speed,PathType.Linear, PathMode.Sidescroller2D )
                 ).SetLoops(-1,LoopType.Restart);
             sequence.Play();
         }
