@@ -15,8 +15,8 @@ namespace TigerFrogGames
 
         
         
-        private bool isInFiringMode = true;
-        private bool isUsingMouse = false;
+        private bool isInFiringMode = false;
+        private bool isUsingMouse = true;
         
         /* ------- Unity Methods ------- */
 
@@ -55,9 +55,10 @@ namespace TigerFrogGames
         {
             if(!isInFiringMode) return;
             
-            if (arg0 == true)
+            if (arg0)
             {
                 Debug.Log("Fire action called On Button Down");
+                PlayerManager.Instance.SpawnPlayerBall( cannonTransformLeft, rightCannonTransformRight );
             }
         }
     }

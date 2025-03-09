@@ -137,7 +137,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyRenderer: {fileID: 4060795112506415536}
   playerOrbMovement: {fileID: 3296784263498201632}
-  <PlayerTeam>k__BackingField: 0
+  destructionTime: 0.8
+  ticksPerSecond: 4
+  DistanceCheck: 1
 --- !u!114 &3296784263498201632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 176533936847082150}
-  startingVelocity: 100
+  startingVelocity: 7.5
   attractionThreshHold: 1
   attractionVelocity: 10
 --- !u!50 &176533936847082150

@@ -79,6 +79,7 @@ namespace TigerFrogGames
         public async Task LoadGameplay()
         {
             await LoadSingleSceneGroup(initialGameplaySceneGroup);
+            GameFlowManager.Instance.StartIntroGame();
         }
         
         public async Task LoadMainMenu()

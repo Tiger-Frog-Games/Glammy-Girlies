@@ -54,14 +54,13 @@ namespace TigerFrogGames
 
         /* ------- Methods ------- */
 
-        public void SetUp(PlayerTeam team, Vector2 initialAngle, PlayerOrb pairedOrbIn)
+        public void SetUp(PlayerTeam team, PlayerOrb pairedOrbIn)
         {
             pairedOrb = pairedOrbIn;
             PlayerTeam = team;
             SetUpVisual();
-
-
-            playerOrbMovement.SetUp(ID, initialAngle, pairedOrb);
+            
+            playerOrbMovement.SetUp(ID,  pairedOrb);
         }
 
         private void SetUpVisual()
