@@ -74,6 +74,8 @@ namespace TigerFrogGames
 
         private void CheckIfInRangeOfDestruction()
         {
+            if(pairedOrb == null) return;
+            
             if (Vector3.Distance(transform.position, pairedOrb.transform.position) > DistanceCheck)
             {
                 collisionTimer.OnTick -= CheckIfInRangeOfDestruction;

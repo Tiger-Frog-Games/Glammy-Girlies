@@ -78,13 +78,25 @@ namespace TigerFrogGames
 
         public async Task LoadGameplay()
         {
-            await LoadSingleSceneGroup(initialGameplaySceneGroup);
+            SceneManager.LoadScene("Gameplay", LoadSceneMode.Additive);
+            if (SceneManager.GetSceneByName("Main Menu").isLoaded)
+            {
+                SceneManager.UnloadSceneAsync("Main Menu");
+            }
+            //await LoadSingleSceneGroup(initialGameplaySceneGroup);
             GameFlowManager.Instance.StartIntroGame();
         }
         
         public async Task LoadMainMenu()
         {
-            await LoadSingleSceneGroup(mainMenuSceneGroup);
+            SceneManager.LoadScene("Main Menu", LoadSceneMode.Additive);
+
+            if (SceneManager.GetSceneByName("Gameplay").isLoaded)
+            {
+                SceneManager.UnloadSceneAsync("Gameplay");
+            }
+            
+            //await LoadSingleSceneGroup(mainMenuSceneGroup);
         }
 
         private async Task LoadSingleSceneGroup(SceneGroup sceneGroupToLoad)

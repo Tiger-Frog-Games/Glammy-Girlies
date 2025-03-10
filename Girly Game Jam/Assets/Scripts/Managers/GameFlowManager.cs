@@ -15,7 +15,10 @@ namespace TigerFrogGames
 
         /* ------- Unity Methods ------- */
 
-
+        private void Start()
+        {
+            StartIntroGame();
+        }
 
         /* ------- Methods ------- */
 

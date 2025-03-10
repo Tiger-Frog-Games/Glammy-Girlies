@@ -32,6 +32,7 @@ namespace TigerFrogGames
           // if (!isInteractable) StartColorTween(, true);
        }
 
+#if UNITY_EDITOR
        protected override void Reset()
        {
            base.Reset();
@@ -44,7 +45,7 @@ namespace TigerFrogGames
            
            targetGraphic = image;
        }
-
+#endif
 
        //taken from unity button.
        //I might need to implement ISubmit / other functions to get it working on gamepad

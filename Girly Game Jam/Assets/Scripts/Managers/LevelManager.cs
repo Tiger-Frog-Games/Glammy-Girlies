@@ -42,6 +42,12 @@ namespace TigerFrogGames
         {
             return currentLevel > levelPrefabs.Length - 1;
         }
+
+        public void ReloadLevel()
+        {
+            currentLevel--;
+            LoadNextLevel();
+        }
         
         [ContextMenu("Load Level")]
         public void LoadNextLevel()
