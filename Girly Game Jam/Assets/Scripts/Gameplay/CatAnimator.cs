@@ -7,33 +7,48 @@ namespace TigerFrogGames
     {
         /* ------- Variables ------- */
         
-       private Sequence catSequenceX;
-       private Sequence catSequenceY;
+        [SerializeField] private PlayerTeam playerTeam;
+        
+        private Sequence catSequenceX;
+        private Sequence catSequenceY;
 
         /* ------- Unity Methods ------- */
 
         private void Awake()
         {
+            PlayerCannonHolder.OnCannonFire += AnimateCat;
+            ItemBubble.OnCollected += ItemBubbleOnOnCollected;
+        }
+
+        
+        private void OnDestroy()
+        {
+            PlayerCannonHolder.OnCannonFire -= AnimateCat;
+            ItemBubble.OnCollected -= ItemBubbleOnOnCollected;
+        }
+
+        /* ------- Methods ------- */
+
+        private void ItemBubbleOnOnCollected(GameObject arg1, PlayerTeam arg2)
+        {
+            if(playerTeam != arg2) return;
+            
+            AnimateCat();
+        }
+        
+        private bool firedOnce = false;
+        private void AnimateCat()
+        {
+            
+            if ( firedOnce && (catSequenceX.IsPlaying() || catSequenceY.IsPlaying())) return;
+           
+            firedOnce = true;
+            
             catSequenceX = DOTween.Sequence().Append( transform.DOScaleX( .8f, .2f)).Append(
                 transform.DOScaleX( 1, .2f));
             catSequenceY = DOTween.Sequence().Append( transform.DOScaleY( 1.2f, .2f)).Append(
                 transform.DOScaleY( 1, .2f));
             
-            PlayerCannonHolder.OnCannonFire += AnimateCat;
-        }
-
-        private void OnDestroy()
-        {
-            PlayerCannonHolder.OnCannonFire -= AnimateCat;
-        }
-
-        /* ------- Methods ------- */
-
-        private void AnimateCat()
-        {
-            Debug.Log("Cat is animating");
-            if (catSequenceX.IsPlaying()) return;
-            Debug.Log("Cat is animating");
             catSequenceX.Play();
             catSequenceY.Play();
         }

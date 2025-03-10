@@ -12,8 +12,16 @@ namespace TigerFrogGames
         
 
         /* ------- Unity Methods ------- */
-        
-       
+
+        private void Start()
+        {
+            ItemBubble.OnCollected += PlaceCupCake;
+        }
+
+        private void OnDestroy()
+        {
+            ItemBubble.OnCollected -= PlaceCupCake;
+        }
 
         /* ------- Methods ------- */
 

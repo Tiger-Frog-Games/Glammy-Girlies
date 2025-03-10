@@ -6,6 +6,8 @@ namespace TigerFrogGames
 {
     public class ItemBubble : Hittable
     {
+        public static event Action<GameObject, PlayerTeam> OnCollected;
+        
         /* ------- Variables ------- */
         [Header("Dependencies")]
         [SerializeField] private SpriteRenderer spriteRendererIcing;
@@ -46,7 +48,7 @@ namespace TigerFrogGames
             var ySequence = DOTween.Sequence().Append( 
                 bodyTransform.DOLocalMoveY(.2f, .2f).SetEase(Ease.OutQuad)).Append(
                 bodyTransform.DOMoveY(LevelManager.Instance.GetLevelBottomY(),fallTime).SetEase(Ease.InQuad)
-                .OnComplete(()=>  CupcakePlacer.Instance.PlaceCupCake(bodyTransform.gameObject, collisionInfo.TriggeringPlayerOrb.PlayerTeam ) ));
+                .OnComplete(()=>  OnCollected?.Invoke(bodyTransform.gameObject, collisionInfo.TriggeringPlayerOrb.PlayerTeam ) ));
             
             ySequence.Play();
 
