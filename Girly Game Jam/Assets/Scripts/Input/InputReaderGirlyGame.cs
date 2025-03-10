@@ -11,6 +11,8 @@ namespace TigerFrogGames
         public event UnityAction<Vector2> Aim = delegate { };
         public event UnityAction<bool> Fire = delegate { };
         public event UnityAction<bool> Pause = delegate { };
+        
+        public event UnityAction<bool> Reload = delegate { };
        
         
         protected override void SetUpInputActions()
@@ -61,12 +63,18 @@ namespace TigerFrogGames
                     break;
             }
         }
-        
-        public void OnUIMove(InputAction.CallbackContext context)
-        {
-            //throw new System.NotImplementedException();
-        }
 
- 
+        public void OnReload(InputAction.CallbackContext context)
+        {
+            switch (context.phase) {
+                case InputActionPhase.Started:
+                    Reload.Invoke(true);
+                    break;
+                case InputActionPhase.Canceled:
+                    Reload.Invoke(false);
+                    break;
+            }
+        }
+        
     }
 }

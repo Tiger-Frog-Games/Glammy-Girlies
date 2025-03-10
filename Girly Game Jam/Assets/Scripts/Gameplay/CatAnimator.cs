@@ -1,4 +1,3 @@
-using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -13,7 +12,7 @@ namespace TigerFrogGames
 
         /* ------- Unity Methods ------- */
 
-        private void Start()
+        private void Awake()
         {
             catSequenceX = DOTween.Sequence().Append( transform.DOScaleX( .8f, .2f)).Append(
                 transform.DOScaleX( 1, .2f));
