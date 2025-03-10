@@ -85,7 +85,7 @@ namespace TigerFrogGames
             
         }
         
-        public async Task RemovePlayerOrb(PlayerOrb playerOrb)
+        public void RemovePlayerOrb(PlayerOrb playerOrb)
         {
             AllPlayerOrbs.Remove(playerOrb.ID);
             
@@ -95,23 +95,27 @@ namespace TigerFrogGames
             {
                 OnRoundOver?.Invoke();
                 
-                await LevelManager.Instance.CleanUpLevel();
-                
-                if (LevelManager.Instance.DidLevelComplete)
-                {
-                    return;
-                }
-                
-                if (PlayerShotsRemaining.Value == 0)
-                {
-                    OnGameOver?.Invoke();
-                    return;
-                }
-                
-                playerCannon.EnableShot();
+                LevelManager.Instance.CleanUpLevel(AfterLevelCleanUp);
             }
         }
 
+
+        private void AfterLevelCleanUp()
+        {
+            if (LevelManager.Instance.DidLevelComplete)
+            {
+                return;
+            }
+                
+            if (PlayerShotsRemaining.Value == 0)
+            {
+                OnGameOver?.Invoke();
+                return;
+            }
+                
+            playerCannon.EnableShot();
+        }
+        
         private void RefreshLivesAndEnableCannon()
         {
             PlayerShotsRemaining.Value = startingShots;

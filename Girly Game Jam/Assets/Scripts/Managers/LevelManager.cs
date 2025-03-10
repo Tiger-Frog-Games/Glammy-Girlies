@@ -152,8 +152,14 @@ namespace TigerFrogGames
             return levelBottomMarker.transform.position.y;
         }
 
-        public async Task CleanUpLevel()
+        public void CleanUpLevel(Action onLevelComplete = null)
         {
+            StartCoroutine(cleanUpLevelIenumerator(onLevelComplete));
+        }
+
+        private IEnumerator cleanUpLevelIenumerator(Action onLevelComplete = null)
+        {
+            
             Debug.Log("Cleaning up level");
 
             while (scoreAbleBlocks.Count > 0)
@@ -164,9 +170,10 @@ namespace TigerFrogGames
                 
                 scoreAbleBlocks.RemoveAt(scoreAbleBlocks.Count-1);
                 Destroy(blockToRemove.gameObject);
-                await Task.Delay(100);
+                yield return new WaitForSeconds(.2f);
             }
             
+            onLevelComplete?.Invoke();
             
             Debug.Log("Cleaning done cleaning up level");
         }
