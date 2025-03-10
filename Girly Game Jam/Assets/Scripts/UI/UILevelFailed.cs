@@ -42,15 +42,18 @@ namespace TigerFrogGames
 
         private void showNextLevelWindow(string movementName)
         {
+            restartLevelButton.interactable = true;
             uiMover.OnMovementOver -= showNextLevelWindow;
             window.enabled = true;
         }
         
         private void resetLevel()
         {
+            restartLevelButton.interactable = false;
             window.enabled = false;
-            LevelManager.Instance.ReloadLevel();
             uiMover.Move("FadeOut");
+            LevelManager.Instance.ReloadLevel();
+            
         }
     }
 }
