@@ -20417,6 +20417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabPlayerOrb: {fileID: 2115844666466658753, guid: 331aecf4f2042eb47b1937f48a70f37b, type: 3}
   playerCannon: {fileID: 602602763}
+  inputReaderGirlyGame: {fileID: 11400000, guid: 29784aaf189237b489ba3abf9bb95ea3, type: 2}
   startingShots: 6
 --- !u!1 &1949181970
 GameObject:

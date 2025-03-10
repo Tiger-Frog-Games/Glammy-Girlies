@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -18,6 +19,8 @@ namespace TigerFrogGames
         [SerializeField] private PlayerOrb prefabPlayerOrb;
 
         [SerializeField] private PlayerCannonHolder playerCannon;
+        [SerializeField] private InputReaderGirlyGame inputReaderGirlyGame;
+        
         
         [Header("Variables")] 
         [SerializeField] private int startingShots = 3;
@@ -39,13 +42,16 @@ namespace TigerFrogGames
             LevelManager.Instance.OnLevelDoneLoading += RefreshLivesAndEnableCannon;
             
             PlayerCannonHolder.OnCannonFire += OnPlayerCannonFire;
+            
+            inputReaderGirlyGame.Reload += InputReaderGirlyGameOnReload;
         }
-
-
+        
         private void OnDisable()
         {
             LevelManager.Instance.OnLevelDoneLoading -= RefreshLivesAndEnableCannon;
             PlayerCannonHolder.OnCannonFire -= OnPlayerCannonFire;
+            
+            inputReaderGirlyGame.Reload += InputReaderGirlyGameOnReload;
         }
         
         /* ------- Methods ------- */
@@ -60,6 +66,23 @@ namespace TigerFrogGames
             
             AllPlayerOrbs.Add( playerOrb.ID, playerOrb );
             AllPlayerOrbs.Add( playerOrb2.ID, playerOrb2 );
+        }
+        
+        private void InputReaderGirlyGameOnReload(bool arg0)
+        {
+            if(AllPlayerOrbs.Count == 0) return;
+            
+            if (arg0)
+            {
+                var list = AllPlayerOrbs.ToList();
+                
+                foreach (KeyValuePair<SerializableGuid, PlayerOrb> playerOrb in list)
+                {
+                    RemovePlayerOrb(playerOrb.Value);
+                }
+            }
+            
+            
         }
         
         public async Task RemovePlayerOrb(PlayerOrb playerOrb)
