@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace TigerFrogGames
@@ -8,11 +9,23 @@ namespace TigerFrogGames
         [Header("Dependencies")]
         [SerializeField] private ParticleSystem particleSystemBubble;
         [SerializeField] private ParticleSystem particleSystemBlockBreack;
-       
+
+        [SerializeField] private ParticleSystem particleSystemRoundWinFanFair;
+        [SerializeField] private ParticleSystem particleSystemGameWinFanFair;
 
         /* ------- Unity Methods ------- */
-        
-       
+
+        private void Start()
+        {
+            LevelManager.Instance.OnLevelVictory += StartFanFair;
+            LevelManager.Instance.OnLevelStartLoading += EndFanFair;
+        }
+
+        private void OnDestroy()
+        {
+            LevelManager.Instance.OnLevelVictory -= StartFanFair;
+            LevelManager.Instance.OnLevelStartLoading -= EndFanFair;
+        }
 
         /* ------- Methods ------- */
 
@@ -40,5 +53,20 @@ namespace TigerFrogGames
 
             particleSystemBlockBreack.Emit(emitParams, 12);
         }
+
+        private void StartFanFair()
+        {
+            if (LevelManager.Instance.IsOutOfLevels())
+            {
+                particleSystemGameWinFanFair.Play();
+            }
+            particleSystemRoundWinFanFair.Play();
+        }
+
+        private void EndFanFair()
+        {
+            particleSystemRoundWinFanFair.Stop();
+        }
+        
     }
 }

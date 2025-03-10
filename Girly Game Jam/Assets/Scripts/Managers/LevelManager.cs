@@ -14,6 +14,7 @@ namespace TigerFrogGames
         public event Action OnOutOfLevels;
         public event Action OnLevelVictory;
         
+        public event Action OnLevelStartLoading;
         public event Action OnLevelDoneLoading;
         /* ------- Variables ------- */
         
@@ -45,7 +46,7 @@ namespace TigerFrogGames
         [ContextMenu("Load Level")]
         public void LoadNextLevel()
         {
-            
+            OnLevelStartLoading?.Invoke();
             scoreAbleBlocks.Clear();
             if (currentLevel > levelPrefabs.Length - 1)
             {
@@ -78,6 +79,7 @@ namespace TigerFrogGames
                 VARIABLE.DOFade(1,.8f);
             }
             yield return new WaitForSeconds(.8f);
+            
             OnLevelDoneLoading?.Invoke();
             DidLevelComplete = false;
             currentLevel++;
