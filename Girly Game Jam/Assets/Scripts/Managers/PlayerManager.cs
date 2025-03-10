@@ -55,8 +55,8 @@ namespace TigerFrogGames
             PlayerOrb playerOrb = Instantiate(prefabPlayerOrb, transformPosition.position, transformPosition.rotation);
             PlayerOrb playerOrb2 = Instantiate(prefabPlayerOrb, transformPositionTwo.position, transformPositionTwo.rotation);
             
-            playerOrb.SetUp(PlayerTeam.AesticOne, playerOrb2);
-            playerOrb2.SetUp(PlayerTeam.AesticTwo, playerOrb);
+            playerOrb.SetUp(PlayerTeam.AesticTwo, playerOrb2);
+            playerOrb2.SetUp(PlayerTeam.AesticOne, playerOrb);
             
             AllPlayerOrbs.Add( playerOrb.ID, playerOrb );
             AllPlayerOrbs.Add( playerOrb2.ID, playerOrb2 );

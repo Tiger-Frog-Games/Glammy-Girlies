@@ -46,7 +46,7 @@ namespace TigerFrogGames
             var ySequence = DOTween.Sequence().Append( 
                 bodyTransform.DOLocalMoveY(.2f, .2f).SetEase(Ease.OutQuad)).Append(
                 bodyTransform.DOMoveY(LevelManager.Instance.GetLevelBottomY(),fallTime).SetEase(Ease.InQuad)
-                .OnComplete(()=> Debug.Log("Award the shop a food item")));
+                .OnComplete(()=>  CupcakePlacer.Instance.PlaceCupCake(bodyTransform.gameObject, collisionInfo.TriggeringPlayerOrb.PlayerTeam ) ));
             
             ySequence.Play();
 
