@@ -22,7 +22,6 @@ namespace TigerFrogGames
             PlayerManager.OnRoundOver += startShowNextLevelWindow;
             root.SetActive(false);
             //restartLevelButton = false;
-            
         }
 
         private void OnDestroy()

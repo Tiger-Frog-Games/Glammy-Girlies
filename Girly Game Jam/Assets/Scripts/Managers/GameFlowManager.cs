@@ -30,8 +30,7 @@ namespace TigerFrogGames
             }
             else
             {
-                //play animation for the intro
-                //diologe?
+                
             }
         }
 
