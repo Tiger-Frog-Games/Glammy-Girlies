@@ -38,14 +38,14 @@ namespace TigerFrogGames
         {
             LevelManager.Instance.OnLevelDoneLoading += RefreshLivesAndEnableCannon;
             
-            playerCannon.OnCannonFire += OnPlayerCannonFire;
+            PlayerCannonHolder.OnCannonFire += OnPlayerCannonFire;
         }
 
 
         private void OnDisable()
         {
             LevelManager.Instance.OnLevelDoneLoading -= RefreshLivesAndEnableCannon;
-            playerCannon.OnCannonFire -= OnPlayerCannonFire;
+            PlayerCannonHolder.OnCannonFire -= OnPlayerCannonFire;
         }
         
         /* ------- Methods ------- */

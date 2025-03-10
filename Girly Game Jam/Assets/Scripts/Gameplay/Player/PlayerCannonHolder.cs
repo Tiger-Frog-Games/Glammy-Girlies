@@ -5,7 +5,7 @@ namespace TigerFrogGames
 {
     public class PlayerCannonHolder : MonoBehaviour
     {
-        public event Action OnCannonFire;
+        public static event Action OnCannonFire;
         
         /* ------- Variables ------- */
         
