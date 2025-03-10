@@ -28,7 +28,9 @@ namespace TigerFrogGames
         [SerializeField] private int currentLevel = 0;
 
         private List<ItemBubble>  foodBubbles = new ();
-        private List<ScoreAbleBlock> scoreAbleBlocks = new(); 
+        private List<ScoreAbleBlock> scoreAbleBlocks = new();
+
+        private GameObject prevloadedLevel;
         
         public bool DidLevelComplete { get; private set; }
         
@@ -52,8 +54,13 @@ namespace TigerFrogGames
         [ContextMenu("Load Level")]
         public void LoadNextLevel()
         {
+            
+            UnloadLevel();
+            
             OnLevelStartLoading?.Invoke();
             scoreAbleBlocks.Clear();
+            
+            
             if (currentLevel > levelPrefabs.Length - 1)
             {
                 OnOutOfLevels?.Invoke();
@@ -91,21 +98,27 @@ namespace TigerFrogGames
             currentLevel++;
         }
         
-        [ContextMenu("unload level")]
+       
         public void UnloadLevel()
         {
+            prevloadedLevel = loadedLevel;
             StartCoroutine(LoadLevelFadeOut());
         }
 
         private IEnumerator LoadLevelFadeOut()
         {
+            if (prevloadedLevel == null)
+            {
+                yield break;
+            }
+            
             foodBubbles.Clear();
             foreach (var VARIABLE in loadedLevel.GetComponentsInChildren<SpriteRenderer>())
             {
                 VARIABLE.DOFade(0, .8f);
             }
             yield return new WaitForSeconds(.8f);
-            Destroy(loadedLevel);
+            Destroy(prevloadedLevel);
         }
         
         public void AddFoodBubble(ItemBubble foodBubble)
