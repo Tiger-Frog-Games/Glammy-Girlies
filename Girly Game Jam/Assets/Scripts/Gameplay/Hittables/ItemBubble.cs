@@ -48,7 +48,11 @@ namespace TigerFrogGames
             var ySequence = DOTween.Sequence().Append( 
                 bodyTransform.DOLocalMoveY(.2f, .2f).SetEase(Ease.OutQuad)).Append(
                 bodyTransform.DOMoveY(LevelManager.Instance.GetLevelBottomY(),fallTime).SetEase(Ease.InQuad)
-                .OnComplete(()=>  OnCollected?.Invoke(bodyTransform.gameObject, collisionInfo.TriggeringPlayerOrb.PlayerTeam ) ));
+                .OnComplete(()=>
+                {
+                    OnCollected?.Invoke(bodyTransform.gameObject, collisionInfo.TriggeringPlayerOrb.PlayerTeam);
+                    Destroy(gameObject);
+                }));
             
             ySequence.Play();
 
@@ -72,6 +76,8 @@ namespace TigerFrogGames
             SoundManager.Instance.CreateSoundBuilder()
                 .WithRandomPitch()
                 .Play(SoundSFXLibrary.Instance.GetSoundByEnum(soundToPlay));
+            
+            
         }
 
         [ContextMenu("Test Set Team")]

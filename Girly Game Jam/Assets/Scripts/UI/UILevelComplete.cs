@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace TigerFrogGames
 {
@@ -8,13 +9,16 @@ namespace TigerFrogGames
     {
         /* ------- Variables ------- */
 
-        [SerializeField] private CustomButton nextLevelButton;
+        [SerializeField] private Button nextLevelButton;
         [SerializeField] private UIElementMover uiMover;
         [SerializeField] private UIWindow window;
         [SerializeField] private TMP_Text TotalScoreText;
 
         [SerializeField] private TMP_Text youWinText;
-        [SerializeField] private CustomButton toMainMenuButton;
+        [SerializeField] private Button toMainMenuButton;
+
+        [SerializeField] private GameObject root;
+        
         /* ------- Unity Methods ------- */
 
         private void Start()
@@ -23,6 +27,11 @@ namespace TigerFrogGames
             PlayerManager.OnRoundOver += startShowNextLevelWindow;
 
             toMainMenuButton.onClick.AddListener(startMainMenu);
+            
+            nextLevelButton.interactable = false;
+            toMainMenuButton.interactable = false;
+            
+            root.SetActive(false);
         }
 
         private void OnDestroy()
@@ -36,6 +45,8 @@ namespace TigerFrogGames
         {
             if(!LevelManager.Instance.DidLevelComplete) return;
 
+            root.SetActive(true);
+            
             if (LevelManager.Instance.IsOutOfLevels())
             {
                 youWinText.gameObject.SetActive(true);
@@ -43,6 +54,7 @@ namespace TigerFrogGames
                 
                 nextLevelButton.gameObject.SetActive(false);
             }
+            
             
             TotalScoreText.text = ScoreManager.Instance.TotalScore.Value.ToString();
             
@@ -53,7 +65,20 @@ namespace TigerFrogGames
         private void showNextLevelWindow(string movementName)
         {
             uiMover.OnMovementOver -= showNextLevelWindow;
-            window.enabled = true;
+           // window.enabled = true;
+            
+            if (LevelManager.Instance.IsOutOfLevels())
+            {
+                toMainMenuButton.interactable = true;
+                nextLevelButton.interactable = false;
+            }
+            else
+            {
+                nextLevelButton.interactable = true;
+                toMainMenuButton.interactable = false;
+            }
+
+            
         }
 
         private void StartCallNextLevel()
@@ -67,6 +92,7 @@ namespace TigerFrogGames
         {
             uiMover.OnMovementOver -= CallNextLevel;
             LevelManager.Instance.LoadNextLevel();
+            root.SetActive(false);
         }
 
         private void startMainMenu()
@@ -79,6 +105,7 @@ namespace TigerFrogGames
         private void CallOpenMainMenu(string movementName)
         {
             uiMover.OnMovementOver -= CallOpenMainMenu;
+            root.SetActive(false);
             SceneLoader.Instance.LoadMainMenu();
         }
         

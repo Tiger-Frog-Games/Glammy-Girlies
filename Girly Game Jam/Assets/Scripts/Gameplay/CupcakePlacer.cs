@@ -34,7 +34,11 @@ namespace TigerFrogGames
                 case PlayerTeam.Both:
                     break;
                 case PlayerTeam.AesticOne:
-                    if(LastLeftSide > LeftSideList.Length) return;
+                    if (LastLeftSide > LeftSideList.Length)
+                    {
+                        Destroy(gameObject);
+                        return;
+                    }
                     
                     cupcake.transform.position = LeftSideList[LastLeftSide].transform.position;
                     LastLeftSide++;
@@ -46,7 +50,11 @@ namespace TigerFrogGames
                     
                     break;
                 case PlayerTeam.AesticTwo:
-                    if(LastRightSide > RightSideList.Length) return;
+                    if (LastRightSide > RightSideList.Length)
+                    {
+                        Destroy(gameObject);
+                        return;
+                    }
                     
                     cupcake.transform.position = RightSideList[LastRightSide].transform.position;
                     LastRightSide++;
@@ -56,7 +64,7 @@ namespace TigerFrogGames
                         sprite.DOFade(1, 0);
                     }
                     
-                    break;
+                    return;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(team), team, null);
             }

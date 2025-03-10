@@ -1,6 +1,7 @@
-using TMPro;
+
 using UnityEngine;
-using UnityEngine.Serialization;
+using UnityEngine.UI;
+
 
 namespace TigerFrogGames
 {
@@ -8,16 +9,19 @@ namespace TigerFrogGames
     {
         /* ------- Variables ------- */
 
-        [SerializeField] private CustomButton restartLevelButton;
+        [SerializeField] private Button restartLevelButton;
         [SerializeField] private UIElementMover uiMover;
         [SerializeField] private UIWindow window;
-
+        [SerializeField] private GameObject root;
+        
         /* ------- Unity Methods ------- */
         
         private void Start()
         {
             restartLevelButton.onClick.AddListener(resetLevel);
             PlayerManager.OnRoundOver += startShowNextLevelWindow;
+            root.SetActive(false);
+            //restartLevelButton = false;
             
         }
 
@@ -30,11 +34,11 @@ namespace TigerFrogGames
                 
         private void startShowNextLevelWindow()
         {
-            window.enabled = false;
-            
             if(LevelManager.Instance.DidLevelComplete ) return;
             
             if(PlayerManager.Instance.PlayerShotsRemaining.Value != 0) return;
+            
+            root.SetActive(true);
             
             uiMover.OnMovementOver += showNextLevelWindow;
             uiMover.Move("LevelOverWin");
@@ -44,13 +48,13 @@ namespace TigerFrogGames
         {
             restartLevelButton.interactable = true;
             uiMover.OnMovementOver -= showNextLevelWindow;
-            window.enabled = true;
         }
         
         private void resetLevel()
         {
+            Debug.Log("Reset Level");
+            root.SetActive(false);
             restartLevelButton.interactable = false;
-            window.enabled = false;
             uiMover.Move("FadeOut");
             LevelManager.Instance.ReloadLevel();
             
