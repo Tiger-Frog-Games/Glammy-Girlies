@@ -1633,6 +1633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 463618465}
   - component: {fileID: 463618466}
+  - component: {fileID: 463618467}
   m_Layer: 0
   m_Name: Cat_Princess
   m_TagString: Untagged
@@ -1710,6 +1711,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &463618467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463618464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e81b707571b2c24fa3c28d42b1f0a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &464402665
 GameObject:
   m_ObjectHideFlags: 0
@@ -13750,6 +13763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1380682549}
   - component: {fileID: 1380682550}
+  - component: {fileID: 1380682551}
   m_Layer: 0
   m_Name: Cat_Emo
   m_TagString: Untagged
@@ -13827,6 +13841,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1380682551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380682548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e81b707571b2c24fa3c28d42b1f0a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1388467873
 GameObject:
   m_ObjectHideFlags: 0
