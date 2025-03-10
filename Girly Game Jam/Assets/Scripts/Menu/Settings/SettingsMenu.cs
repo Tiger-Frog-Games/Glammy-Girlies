@@ -10,16 +10,14 @@ namespace TigerFrogGames
         public event Action OnSettingsClosed;
         
         [Header("Dependencies")]
-        [SerializeField] private CustomButton audioNavigationButton;
-        [SerializeField] private CustomButton keyBindNavigationButton;
-        
+       
         [SerializeField] private CustomButton backNavigationButton;
         
         [SerializeField] private GameObject settingsRoot;
         [SerializeField] private UIElementMover settingsRootMover;
         
         [SerializeField] private GameObject audioSettingsRoot;
-        [SerializeField] private GameObject keyBindSettingsRoot;
+        
 
         
         
@@ -30,8 +28,7 @@ namespace TigerFrogGames
 
         private void Awake()
         {
-            audioNavigationButton.onClick.AddListener(ShowAudioOptions);
-            keyBindNavigationButton.onClick.AddListener(ShowKeyBindOptions);
+
             
             backNavigationButton.onClick.AddListener(StartCloseMenu);
         }
@@ -60,20 +57,9 @@ namespace TigerFrogGames
 
         private void ShowAudioOptions()
         {
-            audioNavigationButton.interactable=(false);
-            keyBindNavigationButton.interactable=(true);
             
             audioSettingsRoot.SetActive(true);
-            keyBindSettingsRoot.SetActive(false);
-        }
-
-        private void ShowKeyBindOptions()
-        {
-            audioNavigationButton.interactable=(true);
-            keyBindNavigationButton.interactable=(false);
-            
-            audioSettingsRoot.SetActive(false);
-            keyBindSettingsRoot.SetActive(true);
+           
         }
         
         

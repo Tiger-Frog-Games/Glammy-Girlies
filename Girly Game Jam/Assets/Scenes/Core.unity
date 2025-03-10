@@ -402,7 +402,7 @@ MonoBehaviour:
         asset: {fileID: 102900000, guid: 7f034cc9ec9367c4b95d7fa576073831, type: 3}
         guid: 7f034cc9ec9367c4b95d7fa576073831
       SceneType: 0
-  startInGameplay: 1
+  startInGameplay: 0
   showDeBugOptions: 0
   displayLevelLoading: 0
 --- !u!1 &1483463612
